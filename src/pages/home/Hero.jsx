@@ -113,17 +113,17 @@ function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center ">
         {/* <FlipWordsDemo /> */}
         <HeroText />
-        <div className="mt-12 flex flex-col md:flex-row justify-center items-center md: gap-10 w-full ">
+        <div className="pt-6 pb-6 flex flex-col md:flex-row justify-center items-center md: gap-10 w-full ">
           {/* <Button variant="secondary">Book a meeting</Button> */}
           <CtaHeroButton text="Book a meeting" />
           <CtaHeroButtonSecondary text="Explore " />
         </div>
       </div>
       {/* logo corousal */}
-      <div className="w-full mt-[-100px] md:mt-[-200px]">
+      <div className="w-full mt-[-120px] ">
         <InfiniteLogoCarousel items={techAreas} />
       </div>
     </div>

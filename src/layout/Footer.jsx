@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold">Stay up to date</h4>
-            <form className="mt-3 flex items-center gap-2">
+            <form className="mt-3 flex flex-col md:flex-row items-center gap-2">
               <input
                 className="flex-1 rounded-xl border border-border bg-card text-card-foreground px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ring/50"
                 placeholder="Enter your email"
@@ -99,5 +99,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-
