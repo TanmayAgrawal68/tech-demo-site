@@ -8,7 +8,7 @@ function Layout({ children }) {
     <SmoothScrollWrapper>
       <NavbarDemo>
         <main className="min-h-screen">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </NavbarDemo>
     </SmoothScrollWrapper>
   );
