@@ -1,21 +1,40 @@
-import { Button } from "@/components/ui/button";
-import { MacbookScrollDemo } from "./components/ui/aceternity/MacbookScrollDemo";
-import { StickyScrollRevealDemo } from "./components/ui/aceternity/StickyScrollDemo";
-import { StickyScroll } from "./components/ui/sticky-scroll-reveal";
-import { StickyScrollWrapper } from "./components/ui/aceternity/StickyScrollWrapper";
-import { CardHoverEffectDemo } from "./components/ui/aceternity/CardHoverEffectDemo";
-import { ThreeDCardDemo } from "./components/ui/aceternity/ThreeDCardDemo";
-import { NavbarDemo } from "./components/ui/aceternity/NavbarDemo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
+import TabPageLayout from "./layout/TabPageLayout";
 import Home from "./pages/home";
-import { Meteors } from "./components/ui/meteors";
-import { BrowserRouter } from "react-router-dom";
+import { ProductDetailPage, ServiceDetailPage } from "./pages/tabPages";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Home />
-      </div>
+      <ScrollToTop />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
+        <Route
+          path="/products/:slug"
+          element={
+            <TabPageLayout>
+              <ProductDetailPage />
+            </TabPageLayout>
+          }
+        />
+        <Route
+          path="/services/:slug"
+          element={
+            <TabPageLayout>
+              <ServiceDetailPage />
+            </TabPageLayout>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -3,7 +3,7 @@ import { NavbarDemo } from "../components/ui/aceternity/NavbarDemo";
 import SmoothScrollWrapper from "./SmoothScrollWrapper";
 import Footer from "./Footer";
 
-function Layout({ children }) {
+function TabPageLayout({ children }) {
   return (
     <SmoothScrollWrapper>
       <NavbarDemo>
@@ -14,4 +14,4 @@ function Layout({ children }) {
   );
 }
 
-export default Layout;
+export default TabPageLayout;

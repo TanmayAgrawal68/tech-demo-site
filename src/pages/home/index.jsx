@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "./Hero";
-import Layout from "../../layout/Layout";
 import { SmartImage } from "../../components/SmartImage";
 import StatsGrid from "./StatBox";
 import { homeData } from "../../../data";
@@ -33,7 +32,7 @@ import { DraggableCardDemo } from "../../components/ui/aceternity/DraggableCardD
 
 function Home() {
   return (
-    <Layout>
+    <>
       <Hero />
       <div className="mt-[-100px]">
         <SmartImage
@@ -57,7 +56,7 @@ function Home() {
       {/* <Testimonials /> */}
       <AnimatedTestimonialsDemo />
       <Footer />
-    </Layout>
+    </>
   );
 }
 
