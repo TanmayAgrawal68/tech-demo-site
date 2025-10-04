@@ -184,11 +184,11 @@ const DetailPage = ({ pageData }) => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 ">
           <TextAnimate
             text="Ready to Get Started?"
             type="fadeInUp"
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 leading-tight"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 leading-tight flex items-center justify-center"
           />
           <motion.p
             className="text-base sm:text-lg md:text-xl text-foreground/80 mb-6 sm:mb-8 leading-relaxed"

@@ -4,6 +4,7 @@ import TabPageLayout from "./layout/TabPageLayout";
 import Home from "./pages/home";
 import { ProductDetailPage, ServiceDetailPage } from "./pages/tabPages";
 import ScrollToTop from "./components/ScrollToTop";
+import CaseStudies from "./pages/casePages";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             </TabPageLayout>
           }
         />
+        <Route path="/case" element={<CaseStudies />} />
       </Routes>
     </BrowserRouter>
   );

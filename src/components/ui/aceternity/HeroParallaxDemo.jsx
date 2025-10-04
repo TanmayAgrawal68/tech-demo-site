@@ -13,7 +13,7 @@ export const products = [
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "/case",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cursor.png",
   },
