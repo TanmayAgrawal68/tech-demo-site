@@ -176,10 +176,134 @@ import {
   FaGift,
 } from "react-icons/fa";
 
+// export const techAreas = [
+//   {
+//     name: "Cloud",
+//     logo: IconCloud,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#1e3a8a)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Data Migration",
+//     logo: IconDatabase,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Roboto, sans-serif",
+//       background: "linear-gradient(90deg,#4b5563,#2563eb)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "AI & ML",
+//     logo: IconSettingsAutomation,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Poppins, sans-serif",
+//       background: "linear-gradient(90deg,#1f2937,#1e40af)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "DevOps",
+//     logo: IconServer,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#1e3a8a)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Mobile App Development",
+//     logo: IconDeviceMobile,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Roboto, sans-serif",
+//       background: "linear-gradient(90deg,#4b5563,#3b82f6)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Web App Development",
+//     logo: IconDeviceDesktop,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Poppins, sans-serif",
+//       background: "linear-gradient(90deg,#1f2937,#2563eb)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Cloud Migration",
+//     logo: IconCloud,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#1e3a8a)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "API Development",
+//     logo: IconApi,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Roboto, sans-serif",
+//       background: "linear-gradient(90deg,#4b5563,#1e40af)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Data Engineering",
+//     logo: IconChartLine,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Poppins, sans-serif",
+//       background: "linear-gradient(90deg,#1f2937,#3b82f6)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Enterprise Solutions",
+//     logo: IconBuildingSkyscraper,
+//     style: {
+//       fontWeight: 200,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#2563eb)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+// ];
+import {
+  FaCloud,
+  FaCogs,
+  FaBrain,
+  FaCodeBranch,
+  FaProjectDiagram,
+  FaPencilRuler,
+  FaCubes,
+  FaChartBar,
+  FaLaptopCode,
+} from "react-icons/fa";
+
 export const techAreas = [
   {
-    name: "Cloud",
-    logo: IconCloud,
+    name: "Digital Platforms",
+    logo: FaLaptopCode,
     style: {
       fontWeight: 200,
       fontFamily: "Inter, sans-serif",
@@ -189,8 +313,8 @@ export const techAreas = [
     },
   },
   {
-    name: "Data Migration",
-    logo: IconDatabase,
+    name: "Data Engineering & Analytics",
+    logo: FaChartBar,
     style: {
       fontWeight: 200,
       fontFamily: "Roboto, sans-serif",
@@ -200,8 +324,8 @@ export const techAreas = [
     },
   },
   {
-    name: "AI & ML",
-    logo: IconSettingsAutomation,
+    name: "Cloud Engineering",
+    logo: FaCloud,
     style: {
       fontWeight: 200,
       fontFamily: "Poppins, sans-serif",
@@ -211,8 +335,8 @@ export const techAreas = [
     },
   },
   {
-    name: "DevOps",
-    logo: IconServer,
+    name: "Managed DevOps",
+    logo: FaCogs,
     style: {
       fontWeight: 200,
       fontFamily: "Inter, sans-serif",
@@ -222,8 +346,8 @@ export const techAreas = [
     },
   },
   {
-    name: "Mobile App Development",
-    logo: IconDeviceMobile,
+    name: "AI & Intelligent Systems",
+    logo: FaBrain,
     style: {
       fontWeight: 200,
       fontFamily: "Roboto, sans-serif",
@@ -233,8 +357,8 @@ export const techAreas = [
     },
   },
   {
-    name: "Web App Development",
-    logo: IconDeviceDesktop,
+    name: "Product Modernization",
+    logo: FaProjectDiagram,
     style: {
       fontWeight: 200,
       fontFamily: "Poppins, sans-serif",
@@ -244,8 +368,8 @@ export const techAreas = [
     },
   },
   {
-    name: "Cloud Migration",
-    logo: IconCloud,
+    name: "UX & Product Design",
+    logo: FaPencilRuler,
     style: {
       fontWeight: 200,
       fontFamily: "Inter, sans-serif",
@@ -255,8 +379,8 @@ export const techAreas = [
     },
   },
   {
-    name: "API Development",
-    logo: IconApi,
+    name: "API & Microservices",
+    logo: FaCubes,
     style: {
       fontWeight: 200,
       fontFamily: "Roboto, sans-serif",
@@ -265,41 +389,30 @@ export const techAreas = [
       color: "transparent",
     },
   },
-  {
-    name: "Data Engineering",
-    logo: IconChartLine,
-    style: {
-      fontWeight: 200,
-      fontFamily: "Poppins, sans-serif",
-      background: "linear-gradient(90deg,#1f2937,#3b82f6)",
-      WebkitBackgroundClip: "text",
-      color: "transparent",
-    },
-  },
-  {
-    name: "Enterprise Solutions",
-    logo: IconBuildingSkyscraper,
-    style: {
-      fontWeight: 200,
-      fontFamily: "Inter, sans-serif",
-      background: "linear-gradient(90deg,#374151,#2563eb)",
-      WebkitBackgroundClip: "text",
-      color: "transparent",
-    },
-  },
 ];
-
 export const homeData = {
   statsData: [
-    { title: "Users", value: 1200, icon: FaUsers },
-    { title: "Revenue", value: 55000, icon: FaDollarSign },
-    { title: "Messages", value: 342, icon: FaComments },
-    { title: "Orders", value: 98, icon: FaShoppingCart },
-    { title: "Growth", value: "25%", icon: FaChartLine },
-    { title: "Likes", value: 1023, icon: FaHeart },
-    { title: "Reviews", value: 87, icon: FaStar },
-    { title: "Notifications", value: "∞", icon: FaBell },
-    { title: "Gifts", value: 12, icon: FaGift },
+    { title: "Customer Average Tenure", value: "24+ Months", icon: FaUsers },
+    { title: "Experts", value: "50+", icon: FaDollarSign },
+    { title: "Platforms", value: "7+", icon: FaComments },
+    { title: "Products", value: "4+", icon: FaShoppingCart },
+    { title: "Collective Experience", value: "20+", icon: FaChartLine },
+    { title: "Globally", value: "10+ Clients", icon: FaHeart },
+    {
+      title: "Collaborating with industry leaders",
+      value: "5+ Partners",
+      icon: FaStar,
+    },
+    {
+      title: "Expertiese across modern tech stacks",
+      value: "15+ Technologies ",
+      icon: FaBell,
+    },
+    {
+      title: "Reliable and resilient solutions",
+      value: "99% Uptime",
+      icon: FaGift,
+    },
   ],
 
   productLinks: [
@@ -724,6 +837,7 @@ export const homeData = {
     },
   },
 };
+
 // Image Carousel
 // heroBackground: {
 //   type: "carousel",

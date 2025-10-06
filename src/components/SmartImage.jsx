@@ -46,7 +46,7 @@ export function SmartImage({
       if (!containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
 
-      const start = windowHeight * 0.6;
+      const start = windowHeight * 0.3;
       const end = windowHeight * 0.2;
 
       const clampedTop = Math.min(Math.max(rect.top, end), start);
@@ -59,7 +59,7 @@ export function SmartImage({
       const containerWidth = containerRef.current.offsetWidth || 1;
       const maxScale = Math.min(finalScale, window.innerWidth / containerWidth);
       const targetScale = initialScale + (maxScale - initialScale) * progress;
-
+      setHovered(true);
       animate(clipLeft, targetLeft, { duration: 0.5, ease: "easeOut" });
       animate(clipRight, targetRight, { duration: 0.5, ease: "easeOut" });
       animate(scale, targetScale, { duration: 0.5, ease: "easeOut" });
@@ -103,8 +103,8 @@ export function SmartImage({
         scale,
         WebkitTapHighlightColor: "transparent",
       }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      // onMouseEnter={() => setHovered(true)}
+      // onMouseLeave={() => setHovered(false)}
     >
       {/* Curtain mask */}
       <motion.div
