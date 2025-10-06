@@ -9,8 +9,8 @@ export const navItems = [
     name: "Features",
     dropdown: {
       layout: {
-        columnCount: 2,
-        width: "600px",
+        columnCount: 4,
+        width: "900px",
         gap: "1rem",
       },
       items: [
@@ -640,7 +640,7 @@ export const homeData = {
   serviceLinks: [
     {
       title: "Fintech Solutions",
-      path: "/products/digital-transformation",
+      path: "/services/fintech",
       description: "Digital wallets, embedded finance, and payment automation",
     },
     {
@@ -685,9 +685,9 @@ export const homeData = {
   ],
   // Detailed page data for services
   servicePages: {
-    consulting: {
-      title: "IT Consulting",
-      subtitle: "Strategic Technology Guidance for Your Success",
+    fintech: {
+      title: "fintech ",
+      subtitle: "Digital wallets, embedded finance, and payment automation",
       heroImage:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
       heroBackground: {
@@ -698,53 +698,56 @@ export const homeData = {
       sections: [
         {
           id: "overview",
-          title: "Expert Technology Consulting",
-          content:
-            "Our experienced IT consultants provide strategic guidance to help you make informed technology decisions that align with your business goals and drive growth.",
+          title: "Powering the Future of Financial Services",
+          content: `The financial world is evolving faster than ever, and businesses need platforms that are agile, secure, and customer-centric. At Techcanopy, we design fintech solutions that streamline payments, lending, and wealth management — making finance simpler, faster, and smarter. From embedded finance and digital wallets to core banking modernization, our solutions empower institutions to operate efficiently while delighting customers. `,
           image:
             "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
           imagePosition: "right",
-          features: [
-            "Technology Strategy & Planning",
-            "Digital Transformation Roadmap",
-            "IT Infrastructure Assessment",
-            "Security & Compliance Review",
-            "Cost Optimization Analysis",
-          ],
+          features: [],
         },
         {
           id: "approach",
-          title: "Our Consulting Methodology",
-          content:
-            "We follow a proven consulting approach that combines industry expertise with deep technical knowledge to deliver actionable recommendations and strategic insights.",
+          title: "What We Offer ",
+          content: "",
           image:
             "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
           imagePosition: "left",
           features: [
-            "Comprehensive Business Analysis",
-            "Technology Gap Assessment",
-            "Risk Evaluation & Mitigation",
-            "Implementation Planning",
-            "Change Management Support",
+            "Loan Origination & Servicing (LOS & LMS) – Automate lending workflows from application to approval",
+            "Digital Collections & Recovery – Streamlined debt management with analytics and automation",
+            "Wealth Management Dashboards & Analytics – Real-time insights for smarter financial decisions",
+            "Risk Profiling & Compliance-Ready Insights – Reduce risk and ensure regulatory compliance",
+            "Real-Time Payments & Settlements – Fast, secure, and transparent payment processing",
+            "Automated Reconciliation & Reporting – Simplified accounting and reporting for finance teams",
+            "Digital Wallets & QR Payments – Mobile-first payment solutions for modern customers",
+            "Core Banking Modernization – Upgrade legacy systems for scale, reliability, and performance",
+            "Open Banking APIs & Integrations – Seamless connections with third-party apps and services",
+            "Embedded Finance Solutions – Integrate financial services directly into platforms and marketplaces",
           ],
         },
         {
           id: "expertise",
-          title: "Areas of Expertise",
-          content:
-            "Our consulting team brings deep expertise across multiple technology domains, ensuring you get the right guidance for your specific industry and business needs.",
+          title: "How We Build It Differently",
+          content: `Our fintech solutions are designed for speed, security, and scalability. We combine deep domain expertise with cutting-edge technologies to deliver platforms that not only meet current needs but anticipate future trends. Every system is designed for performance, regulatory compliance, and seamless integration with existing infrastructure. 
+
+We focus on: `,
           image:
             "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
           imagePosition: "right",
           features: [
-            "Cloud Architecture & Migration",
-            "Data Strategy & Analytics",
-            "Cybersecurity & Risk Management",
+            "User-centric design for effortless adoption",
+            "Modular architectures for flexibility and quick feature rollout ",
+            "Cloud-native, secure platforms for performance and compliance ",
             "DevOps & Agile Transformation",
-            "Enterprise Software Selection",
+            "Data-driven insights to optimize operations and customer experience ",
           ],
         },
       ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy’s fintech expertise, financial institutions can innovate faster, reduce operational complexity, and deliver smarter financial experiences to their customers. We don’t just build software — we build the platforms that drive financial transformation",
+      },
     },
     development: {
       title: "Custom Development",

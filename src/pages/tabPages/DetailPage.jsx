@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TextAnimate } from "../../components/ui/TextAnimate";
 import HeroBackground from "../../components/HeroBackground";
-
+import Fade from "react-reveal/Fade";
 const DetailPage = ({ pageData }) => {
   if (!pageData) {
     return (
@@ -184,10 +184,16 @@ const DetailPage = ({ pageData }) => {
             className=" flex flex-wrap justify-center items-center text-xl md:text-3xl text-primary font-bold"
           />
 
-          <TextAnimate
-            text={pageData?.blockquote?.content}
-            className=" text-primary flex flex-wrap justify-center items-center p-5 "
-          />
+          {/* <Fade bottom> */}
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className=" text-primary whitespace-pre-wrap max-w-[1200px] text-center items-center p-5 "
+          >
+            {pageData?.blockquote?.content}
+          </motion.p>
+          {/* </Fade> */}
         </div>
       )}
 
