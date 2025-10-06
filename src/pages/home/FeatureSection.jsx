@@ -8,12 +8,12 @@ import { TextAnimate } from "../../components/ui/TextAnimate";
 
 const tabs = [
   {
-    title: "Product",
+    title: "Product Engineering",
     value: "product",
     content: <TabContent links={homeData.productLinks} />,
   },
   {
-    title: "Services",
+    title: "Domain",
     value: "services",
     content: <TabContent links={homeData.serviceLinks} />,
   },
@@ -21,20 +21,19 @@ const tabs = [
 
 export function FeatureSection() {
   return (
-    <section className="relative   mt-[300px] ">
+    <section className="relative   mt-[240px] ">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-10 md:mb-14 text-center">
-          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground">
+          <div className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground flex justify-center">
             <TextAnimate
               text="Powerful features to grow with you"
-              type="rollIn"
-              className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground"
+              className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground p-2"
             />
             {/* Powerful features to grow with you */}
-          </h2>
+          </div>
           <TextAnimate
             text=" Explore our product capabilities and service offerings in a single, delightful interface."
-            type="fadeInUp"
+            type="rollIn"
             className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto"
           ></TextAnimate>
         </div>
@@ -42,13 +41,13 @@ export function FeatureSection() {
           <div className="w-full ">
             <ImageStack />
           </div>
-          <div className="w-full">
+          <div className="w-full md:mt-[-48px] ">
             <Tabs
               tabs={tabs}
               containerClassName="gap-3"
-              tabClassName="text-sm md:text-base"
+              tabClassName="text-sm md:text-base hover:bg-secondary/50 "
               activeTabClassName="bg-muted"
-              contentClassName=""
+              contentClassName="overflow-scroll max-h-[80vh]"
             />
           </div>
         </div>

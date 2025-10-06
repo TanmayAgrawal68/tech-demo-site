@@ -222,7 +222,25 @@ body::-webkit-scrollbar {
   .no-visible-scrollbar::-webkit-scrollbar {
     display: none;
   }
+  ::-webkit-scrollbar {
+    width: 6px; /* thin scrollbar */
+    height: 6px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: transparent; /* invisible track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(189, 192, 190, 0.527); /* light transparent handle */
+    border-radius: 9999px; /* full round edges */
+    transition: background 0.3s ease;
+    min-height: 30px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25); /* slightly visible on hover */
+  }
   @keyframes slide-gradient {
     0% {
       transform: translateX(-100%) skewY(3deg);

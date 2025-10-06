@@ -18,7 +18,7 @@ export const Tabs = ({
       {/* Tab headers with stacking effect */}
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full ",
           containerClassName
         )}
       >
@@ -57,7 +57,10 @@ export const Tabs = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className={cn("mt-8", contentClassName)}
+        className={cn(
+          "mt-2 shadow-xs bg-gradient-to-br  from-card  to-100% rounded-md  ",
+          contentClassName
+        )}
       >
         {activeTab.content}
       </motion.div>

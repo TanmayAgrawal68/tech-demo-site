@@ -39,12 +39,12 @@ const DetailPage = ({ pageData }) => {
             <TextAnimate
               text={title}
               type="fadeInUp"
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 px-2 bg-gradient-to-r from-white to-secondary/90 bg-clip-text text-transparent leading-tight"
+              className="flex flex-wrap justify-center item-ce text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 px-2 bg-gradient-to-r from-white to-secondary/90 bg-clip-text text-transparent leading-tight"
             />
             <TextAnimate
               text={subtitle}
               type="fadeInUp"
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto px-2 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto px-1 leading-relaxed flex flex-wrap justify-center items-center"
               delay={0.3}
             />
           </motion.div>
@@ -175,6 +175,21 @@ const DetailPage = ({ pageData }) => {
           </motion.section>
         ))}
       </div>
+      {/* blockquote section  */}
+      {pageData?.blockquote && (
+        <div className="mt-5 mb-18 flex flex-col p-2 gap-5 justify-center items-center">
+          <TextAnimate
+            text={pageData?.blockquote?.title}
+            type="fadeInUp"
+            className=" flex flex-wrap justify-center items-center text-xl md:text-3xl text-primary font-bold"
+          />
+
+          <TextAnimate
+            text={pageData?.blockquote?.content}
+            className=" text-primary flex flex-wrap justify-center items-center p-5 "
+          />
+        </div>
+      )}
 
       {/* Call to Action Section */}
       <motion.section

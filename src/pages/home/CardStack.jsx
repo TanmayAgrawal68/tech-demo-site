@@ -16,7 +16,7 @@ export const Highlight = ({ children, className }) => {
 
 export function ImageStack() {
   return (
-    <div className="relative w-full h-[80vh] flex items-center justify-center">
+    <div className="relative w-full h-[100vh] flex items-center justify-center">
       <CardStack items={CARDS} />
     </div>
   );
@@ -26,7 +26,7 @@ const CARDS = [
   {
     id: 0,
     content: (
-      <div className="relative w-full h-full overflow-hidden rounded-3xl">
+      <div className="relative w-full h-full overflow-hidden rounded-md">
         <img
           src="https://plus.unsplash.com/premium_photo-1723568482798-98f38c60a3e9?q=80&w=730&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Manu Arora"
@@ -45,7 +45,7 @@ const CARDS = [
   {
     id: 1,
     content: (
-      <div className="relative w-full h-full overflow-hidden rounded-3xl">
+      <div className="relative w-full h-full overflow-hidden rounded-md">
         <img
           src="https://plus.unsplash.com/premium_photo-1661757016832-25603706f2a9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Elon Musk"
@@ -64,7 +64,7 @@ const CARDS = [
   {
     id: 2,
     content: (
-      <div className="relative w-full h-full overflow-hidden rounded-3xl">
+      <div className="relative w-full h-full overflow-hidden rounded-md">
         <img
           src="https://images.unsplash.com/photo-1634836023845-eddbfe9937da?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Tyler Durden"

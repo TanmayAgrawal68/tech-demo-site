@@ -10,7 +10,7 @@ export const TabContent = ({ links = [] }) => {
   };
 
   return (
-    <div className="w-full relative rounded-2xl p-6 md:p-10 text-card-foreground bg-card">
+    <div className="w-full relative  p-6 md:p-10 text-card-foreground">
       <div className="flex flex-col gap-6 md:gap-8">
         {links?.map((link) => (
           <motion.div
