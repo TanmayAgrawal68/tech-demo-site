@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroParallax } from "../hero-parallax";
-
+import sampleCase from "../../../assets/samplecase.png";
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }
@@ -13,9 +13,8 @@ export const products = [
   },
   {
     title: "Cursor",
-    link: "/case",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    link: "/case/sampleCase",
+    thumbnail: sampleCase,
   },
   {
     title: "Rogue",
