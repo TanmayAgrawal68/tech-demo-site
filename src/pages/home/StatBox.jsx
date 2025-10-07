@@ -20,7 +20,7 @@ function StatBox({ title, icon: Icon, value }) {
 
   return (
     <motion.div
-      className="bg-gray-900/50 text-primary-foreground dark:bg-primary-dark/30 p-4 border-1 border-secondary  flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform duration-300"
+      className="bg-gray-200/90 text-primary dark:bg-primary-dark/30 p-4 border-1 border-secondary  flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform duration-300"
       whileHover={{ scale: 1.05 }}
     >
       {Icon && <Icon className="w-6 h-6 mb-2" />}
@@ -34,8 +34,8 @@ function StatBox({ title, icon: Icon, value }) {
 export default function StatsGrid({ data }) {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-      <div className="max-w-[360px] bg-gray-900/70 border-1 border-secondary p-6 pl-7 rounded-r-sm ml-[-30px] ">
-        <p className="text-md text-white">
+      <div className="max-w-[360px] bg-gray-200/90  p-6 pl-7 rounded-r-sm ml-[-30px] ">
+        <p className="text-md text-primary">
           Founded in 2019, Techcanopy brings together a team of experienced
           engineers, designers, and innovators to build products that help
           businesses grow and adapt in a rapidly evolving digital world. From
