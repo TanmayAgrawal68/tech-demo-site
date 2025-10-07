@@ -29,14 +29,14 @@ const CARDS = [
       <div className="relative w-full h-full overflow-hidden rounded-md">
         <img
           src="https://images.unsplash.com/photo-1603969280040-3bbb77278211?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Manu Arora"
+          alt="Mobile-app"
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
         <div className="absolute bottom-0 left-0 w-full bg-black/30 p-4">
           <p className="text-white font-semibold text-center">
-            These cards are amazing, <Highlight>I want to use them</Highlight>{" "}
-            in my project.
+            Integrating the digital platform with existing systems and
+            third-party applications.
           </p>
         </div>
       </div>
@@ -47,15 +47,14 @@ const CARDS = [
     content: (
       <div className="relative w-full h-full overflow-hidden rounded-md">
         <img
-          src="https://plus.unsplash.com/premium_photo-1661757016832-25603706f2a9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1746014600929-8e4bf8d370f9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Elon Musk"
           className="w-full h-full object-cover"
         />
         <div className="absolute bottom-0 left-0 w-full bg-black/30 p-4">
           <p className="text-white font-semibold text-center">
-            I don’t like this Twitter thing,{" "}
-            <Highlight>deleting it right away</Highlight>. Instead, I would like
-            to call it <Highlight>X.com</Highlight>.
+            Designing intuitive and user-friendly interfaces for the digital
+            platform.
           </p>
         </div>
       </div>
@@ -72,8 +71,8 @@ const CARDS = [
         />
         <div className="absolute bottom-0 left-0 w-full bg-black/30 p-4">
           <p className="text-white font-semibold text-center">
-            The first rule of <Highlight>Fight Club</Highlight> is that you do
-            not talk about fight club.
+            Implementing security measures to protect the digital platform and
+            its data.
           </p>
         </div>
       </div>

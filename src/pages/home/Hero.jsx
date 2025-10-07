@@ -23,6 +23,16 @@ function Hero() {
   const [mousePosition, setMousePosition] = useState(defaultPosition);
   const [isHovering, setIsHovering] = useState(false);
   const [meetingModal, setMeetingModal] = useState(false);
+
+  const scrollToFeatures = () => {
+    const featureSection = document.getElementById("feature-section");
+    if (featureSection) {
+      featureSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   useEffect(() => {
     const handleResize = () => {
       if (!isHovering) {
@@ -128,7 +138,7 @@ function Hero() {
             text="Book a meeting"
             handleClick={() => setMeetingModal(true)}
           />
-          <CtaHeroButtonSecondary text="Explore " />
+          <CtaHeroButtonSecondary text="Explore" onClick={scrollToFeatures} />
         </div>
       </div>
       {/* logo corousal */}
