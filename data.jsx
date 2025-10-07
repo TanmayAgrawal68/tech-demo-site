@@ -4,6 +4,7 @@ import {
   IconPalette,
   IconPhoto,
 } from "@tabler/icons-react";
+import healthCare from "./src/assets/case-studies/health-care.jpg";
 export const navItems = [
   {
     name: "Solutions",
@@ -84,20 +85,71 @@ export const navItems = [
   },
   {
     name: "Case studies",
-    dropdown: [
-      {
-        type: "link",
-        label: "GitHub",
-        href: "https://github.com",
-        icon: <IconBrandGithub />,
+    dropdown: {
+      layout: {
+        columnCount: 2,
+        width: "900px",
+        gap: "1rem",
       },
-      {
-        type: "link",
-        label: "Gallery",
-        href: "#gallery",
-        icon: <IconPhoto />,
-      },
-    ],
+      items: [
+        {
+          type: "link",
+          label: "Intelligent Loan Management Platform for a Leading NBFC",
+          href: "/case/intelligent-loan-management",
+          description:
+            "Redefining lending efficiency through automation, compliance, and data intelligence ",
+        },
+
+        {
+          type: "link",
+          label: "Smart Food Logging & Wellness Platform",
+          href: "/case/smart-food-logging",
+          description:
+            "Empowering users to achieve healthier lifestyles through intelligent health tracking",
+        },
+        {
+          type: "link",
+          label: "Unified Data Platform for a Telecom Enterprise ",
+          href: "/case/unified-data-platform",
+          description:
+            "Transforming network data into actionable business intelligence",
+        },
+        {
+          type: "link",
+          label: "Agri Intelligence Platform for Sustainable Farming ",
+          href: "/case/agritech-intelligence-platform",
+          description:
+            "Digitizing agriculture through IoT, analytics, and traceability ",
+        },
+        {
+          type: "link",
+          label: "Digital Transformation for a Manufacturing Enterprise",
+          href: "/case/digital-transformation",
+          description:
+            "Bringing intelligence and automation to production floors",
+        },
+        {
+          type: "link",
+          label: "Retail Operations Platform for a Multi-Store Chain ",
+          href: "/case/retail-operations",
+          description:
+            "Driving connected commerce through data and automation ",
+        },
+        {
+          type: "link",
+          label: "Healthcare Network Management System ",
+          href: "/case/healthcare-network-management",
+          description: "Enabling connected, data-driven healthcare delivery ",
+        },
+        {
+          type: "link",
+          label: "Smart Governance Portal for Public Institutions ",
+          href: "/case/smart-governance-portal",
+          description:
+            "Driving transparency and efficiency in digital governance ",
+        },
+      ],
+    },
   },
   {
     name: "Contact Us",
@@ -1865,78 +1917,49 @@ Our methodology includes: `,
 };
 
 export const caseData = {
-  sampleCase: {
-    heroTitle: "some hero title",
-    heroSubtitle: "some hero subtitle",
-    heroImg: "",
+  "intelligent-loan-management": {
+    heroTitle: "Intelligent Loan Management Platform for a Leading NBFC",
+    heroSubtitle:
+      "Redefining lending efficiency through automation, compliance, and data intelligence ",
+    heroImg:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
     timelineData: [
       {
-        title: "Vision & Challenge",
+        title: "Vision & Challenge ",
         content: (
           <div>
             <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
-              In early 2024, a growing community of educators faced a recurring
-              challenge — their achievements, projects, and student impact
-              stories were scattered across spreadsheets, drive folders, and
-              chat screenshots. There was no unified platform to capture an
-              educator’s journey or showcase the success stories of their
-              students.
+              A fast-growing NBFC sought to digitize its loan lifecycle—from
+              origination to servicing—to keep pace with market demands and
+              regulatory complexity. Manual processes led to delayed disbursals,
+              scattered data, and inefficient risk assessment. The absence of
+              unified visibility between sales, credit, and collections teams
+              hindered portfolio oversight. The vision was to build a{" "}
+              <strong> scalable, compliance-ready lending platform </strong>{" "}
+              that unified teams, automated decisions, and enhanced borrower
+              experience.
             </p>
-
-            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
-              Our goal was ambitious yet simple —{" "}
-              <span className="font-semibold">
-                create a mobile-first ecosystem
-              </span>
-              that empowers educators to record, visualize, and share their
-              professional growth, while helping students track their learning
-              journey and connect with mentors.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?q=80&w=800&auto=format&fit=crop"
-                alt="Educator problem brainstorming"
-                className="h-44 w-full rounded-xl object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop"
-                alt="Educators discussing challenges"
-                className="h-44 w-full rounded-xl object-cover shadow-md"
-              />
-            </div>
           </div>
         ),
       },
       {
-        title: "Solution Blueprint",
+        title: "Solution Blueprint ",
         content: (
           <div>
             <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
-              We conceptualized <span className="font-semibold">“Mentra”</span>{" "}
-              — an integrated portfolio and mentorship platform that allows
-              educators to build verified portfolios, track student growth, and
-              foster a collaborative learning community.
+              Techcanopy architected a{" "}
+              <strong>
+                {" "}
+                modular Loan Origination and Management Platform (LOS + LMS){" "}
+              </strong>{" "}
+              built on microservices and workflow orchestration. The system
+              automated KYC, credit scoring, approval routing, and repayment
+              tracking. Smart rule engines enabled configurable credit policies
+              and compliance adherence. Integrated APIs supported PAN
+              verification, CIBIL scoring, and payment gateways. The solution
+              ensured audit transparency, SLA adherence, and regulatory
+              readiness through real-time dashboards and alerts.
             </p>
-            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
-              Each educator gets a digital profile showcasing their milestones,
-              workshops, success stories, and analytics of student outcomes —
-              essentially their teaching journey turned into a living, breathing
-              story.
-            </p>
-
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1602526215433-ff2b69b3bb87?q=80&w=800&auto=format&fit=crop"
-                alt="Solution wireframes"
-                className="h-44 w-full rounded-lg object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1581091870627-3f89c06f1d9d?q=80&w=800&auto=format&fit=crop"
-                alt="App interface preview"
-                className="h-44 w-full rounded-lg object-cover shadow-md"
-              />
-            </div>
           </div>
         ),
       },
@@ -1944,36 +1967,28 @@ export const caseData = {
         title: "Experience Flow",
         content: (
           <div>
-            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
-              Our design philosophy revolved around storytelling and clarity. We
-              applied{" "}
-              <span className="font-semibold">Design Thinking principles</span>{" "}
-              — empathize, define, ideate, prototype, test — to craft an
-              experience that feels personal yet powerful.
-            </p>
-            <p className="mb-4 text-sm text-neutral-800 dark:text-neutral-200">
-              The UI blends clean minimalism with human warmth: soft gradients,
-              timeline-based journeys, and shareable “success story cards” for
-              each milestone.
-            </p>
-
-            <div className="grid grid-cols-3 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1629909613684-6464c61e15ab?q=80&w=800&auto=format&fit=crop"
-                alt="UI moodboard"
-                className="h-40 w-full rounded-lg object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1616627560224-23b40c0072b1?q=80&w=800&auto=format&fit=crop"
-                alt="Prototype sketches"
-                className="h-40 w-full rounded-lg object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1600267165490-094d3f6a27de?q=80&w=800&auto=format&fit=crop"
-                alt="Design presentation"
-                className="h-40 w-full rounded-lg object-cover shadow-md"
-              />
-            </div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                Borrowers initiated digital applications with real-time
+                eligibility checks.
+              </li>
+              <li>
+                Automated KYC, credit rule evaluation, and document validation
+                reduced manual effort.
+              </li>
+              <li>
+                Role-based workflows dynamically routed applications for
+                approval and disbursement.
+              </li>
+              <li>
+                Loan servicing and EMI management operated via unified
+                dashboards.
+              </li>
+              <li>
+                Management tracked delinquency, NPA risk, and performance
+                metrics through analytics.
+              </li>
+            </ul>
           </div>
         ),
       },
@@ -1981,31 +1996,14 @@ export const caseData = {
         title: "Technology",
         content: (
           <div>
-            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
-              The app was built with scalability and real-time data sync in
-              mind. We used a modern cross-platform stack that ensures smooth
-              performance across devices.
-            </p>
             <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
-              <li>⚙️ Frontend: React Native + Vite + Tailwind</li>
-              <li>🧠 Backend: Node.js + Express + MongoDB (Atlas)</li>
-              <li>☁️ Cloud: AWS Amplify + S3 for file storage</li>
-              <li>🔒 Authentication: Firebase Auth + Role-based Access</li>
-              <li>📈 Analytics: Custom dashboard using Recharts</li>
+              <li>⚙️ Frontend: Angular </li>
+              <li>
+                🧠 Backend: Java + Spring Boot + MySQL + Kafka + Microservices
+                Architecture + REST APIs
+              </li>
+              <li>☁️ Cloud: AWS </li>
             </ul>
-
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1603570419873-325a6805b21d?q=80&w=800&auto=format&fit=crop"
-                alt="Tech diagram"
-                className="h-44 w-full rounded-lg object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?q=80&w=800&auto=format&fit=crop"
-                alt="Development team setup"
-                className="h-44 w-full rounded-lg object-cover shadow-md"
-              />
-            </div>
           </div>
         ),
       },
@@ -2013,39 +2011,689 @@ export const caseData = {
         title: "Impact",
         content: (
           <div>
-            <p className="mb-4 text-sm text-neutral-800 dark:text-neutral-200">
-              Within six months of launch,{" "}
-              <span className="font-semibold">Mentra</span> onboarded over
-              10,000 educators and 80,000 students across 200 institutions.
-            </p>
-            <p className="mb-4 text-sm text-neutral-800 dark:text-neutral-200">
-              Educators reported a 45% increase in visibility and recognition
-              for their achievements. Students now maintain a living timeline of
-              their growth, achievements, and skill progression.
-            </p>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong>60% faster loan disbursal cycles</strong> through
+                workflow automation.
+              </li>
+              <li>
+                <strong>40% improvement in operational productivity</strong>.
+              </li>
+              <li>
+                <strong>100% digital audit trails</strong> and policy compliance
+                readiness.
+              </li>
+              <li>
+                <strong>Seamless scalability</strong> for new financial products
+                and integrations.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "smart-food-logging": {
+    heroTitle: "Smart Food Logging & Wellness Platform",
+    heroSubtitle:
+      "Empowering users to achieve healthier lifestyles through intelligent health tracking",
+    heroImg:
+      "https://images.unsplash.com/photo-1723853310545-b657f3e36396?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
             <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
-              The platform is now expanding into global markets, building a
-              verified network of educators, institutions, and learners —
-              redefining how academic journeys are documented and shared.
+              A wellness startup wanted to build a holistic digital ecosystem
+              combining nutrition tracking, fitness monitoring, and personalized
+              recommendations. The goal was to make wellness measurable and
+              intuitive while ensuring seamless integration with third-party
+              wearables and food databases. Challenges included{" "}
+              <strong>
+                {" "}
+                data accuracy, personalization at scale, and user retention{" "}
+              </strong>{" "}
+              in a crowded market.
             </p>
-
-            <div className="grid grid-cols-3 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
-                alt="User testimonials"
-                className="h-40 w-full rounded-lg object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=80&w=800&auto=format&fit=crop"
-                alt="Team success celebration"
-                className="h-40 w-full rounded-lg object-cover shadow-md"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop"
-                alt="Mentorship session"
-                className="h-40 w-full rounded-lg object-cover shadow-md"
-              />
-            </div>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy developed a{" "}
+              <strong>comprehensive health platform </strong> with AI-powered
+              analytics and real-time synchronization. The system allowed users
+              to log meals, calculate macronutrients, and receive smart
+              recommendations. It integrated with popular fitness wearables and
+              employed ML models to analyze user behavior and suggest
+              personalized goals. The backend supported large-scale data
+              ingestion for analytics and daily progress tracking.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>Users logged meals via barcode scanning or voice input.</li>
+              <li>
+                AI calculated calories and nutrient intake, adjusting daily
+                goals dynamically.
+              </li>
+              <li>
+                Integrations synced with Fitbit, Apple Health, and Google Fit
+                for holistic tracking.{" "}
+              </li>
+              <li>
+                Personalized dashboards provided goal insights and trend
+                visualizations.
+              </li>
+              <li>
+                Coaches accessed aggregated progress analytics for guided
+                interventions.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>⚙️ Frontend: React Native </li>
+              <li>
+                🧠 Backend: Node.js + MongoDB + AWS Lambda + Python ML APIs +
+                GraphQL
+              </li>
+              <li>☁️ Cloud: AWS </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong>75% increase in daily active users </strong>
+                due to engagement gamification.{" "}
+              </li>
+              <li>
+                <strong>50% reduction in data-entry friction </strong> with
+                predictive logging.{" "}
+              </li>
+              <li>
+                <strong>Enhanced retention</strong> through habit-tracking
+                algorithms and personalized nudges.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "unified-data-platform": {
+    heroTitle: "Unified Data Platform for a Telecom Enterprise ",
+    heroSubtitle:
+      "Transforming network data into actionable business intelligence ",
+    heroImg:
+      "https://images.unsplash.com/photo-1643155193188-38eb08e2b54f?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
+            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
+              A telecom enterprise operating across multiple regions needed a
+              <strong> single source of truth </strong> for network operations,
+              customer service, and billing. Legacy systems generated vast but
+              fragmented data, slowing down reporting and strategic decisions.
+              The challenge was to consolidate multi-format data pipelines,
+              automate ETL, and deliver analytics at scale.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy engineered a{" "}
+              <strong> cloud-based unified data platform </strong>
+              leveraging real-time streaming, transformation pipelines, and
+              advanced visualization. The solution ingested terabytes of data
+              from OSS/BSS systems, normalized it using ETL workflows, and
+              exposed curated datasets to business dashboards. Automated data
+              quality validation and alert mechanisms ensured reliability.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>Data ingestion from network, CRM, and billing systems. </li>
+              <li>
+                Kafka and Airflow pipelines processed data in near real time.
+              </li>
+              <li>
+                Cleaned datasets stored in Redshift served analytics and
+                dashboards.
+              </li>
+              <li>
+                Power BI visualized KPIs like network uptime, ARPU, and churn
+                rate.
+              </li>
+              <li>
+                Predictive models forecasted network load and service demand.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>
+                🧠 Backend: Python + Apache Kafka + AWS Redshift + Airflow +
+                Power BI + S3 + Lambda
+              </li>
+              <li>☁️ Cloud: AWS </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong>Centralized analytics</strong> delivering 360°
+                operational visibility.
+              </li>
+              <li>
+                <strong>Report generation time reduced by 85%.</strong>
+              </li>
+              <li>
+                <strong>45% improvement in forecasting accuracy </strong>for
+                capacity planning.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "agritech-intelligence-platform": {
+    heroTitle: "Agri Intelligence Platform for Sustainable Farming ",
+    heroSubtitle:
+      "Digitizing agriculture through IoT, analytics, and traceability ",
+    heroImg:
+      "https://images.unsplash.com/photo-1714388870436-d1e8ee3b8c92?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
+            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
+              An agriculture company aimed to empower farmers with{" "}
+              <strong> data-driven insights </strong> for yield optimization and
+              sustainable farming. Manual data collection limited visibility
+              into soil health, irrigation, and pest risks. They needed an
+              integrated digital ecosystem to unify sensor data, analytics, and
+              supply chain visibility.{" "}
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy designed an{" "}
+              <strong> IoT-enabled agritech platform </strong> that collected
+              field data through soil sensors and drones, applied AI analytics
+              for predictions, and offered actionable insights via a mobile
+              dashboard. Farmers, distributors, and agronomists accessed
+              role-specific views with localized recommendations.
+              Blockchain-based traceability ensured supply chain transparency.{" "}
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                IoT sensors transmitted soil, temperature, and moisture data.
+              </li>
+              <li>
+                AI models predicted yield patterns and irrigation schedules.
+              </li>
+              <li>Farmers received multilingual alerts and guidance.</li>
+              <li>Market linkage module connected producers to buyers.</li>
+              <li>
+                Analytics dashboards visualized regional productivity trends.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>⚙️ Frontend: React </li>
+              <li>
+                🧠 Backend: Node.js + AWS IoT Core + TensorFlow + PostgreSQL +
+                MQTT + Blockchain APIs
+              </li>
+              <li>☁️ Cloud: AWS </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong>30% higher yield predictability.</strong>
+              </li>
+              <li>
+                <strong>25% savings in water and resource usage.</strong>
+              </li>
+              <li>
+                <strong>Transparent farm-to-market visibility </strong>{" "}
+                improving farmer profitability.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "digital-transformation": {
+    heroTitle: "Digital Transformation for a Manufacturing Enterprise",
+    heroSubtitle: "Bringing intelligence and automation to production floors",
+    heroImg:
+      "https://images.unsplash.com/photo-1717386255773-1e3037c81788?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
+            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
+              A large manufacturer struggled with disconnected systems and
+              manual data collection across production lines. The lack of
+              real-time insights hindered decision-making and quality control.
+              They needed a{" "}
+              <strong> centralized manufacturing operations platform </strong>{" "}
+              that connected machines, processes, and people.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy implemented a{" "}
+              <strong> smart manufacturing solution </strong> with IoT-enabled
+              tracking, automated reporting, and visual analytics. The platform
+              collected shop-floor data, measured OEE, and identified
+              performance anomalies. Machine data integrated directly with ERP
+              for unified visibility.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>Operators logged job cards digitally via tablets.</li>
+              <li>
+                IoT sensors captured runtime, temperature, and production
+                counts.
+              </li>
+              <li>
+                Dashboards monitored throughput and downtime in real time.
+              </li>
+              <li>
+                Alerts notified supervisors of deviations and maintenance needs.
+              </li>
+              <li>
+                Executives viewed KPIs across plants for planning and
+                optimization.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>⚙️ Frontend: Angular </li>
+              <li>
+                🧠 Backend: Spring Boot + Azure IoT Hub + PostgreSQL + Docker +
+                Power BI
+              </li>
+              <li>☁️ Cloud: Azure </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong>50% faster performance analytics </strong> via
+                automation.
+              </li>
+              <li>
+                <strong>20% reduction in unplanned downtime </strong> through
+                predictive maintenance.
+              </li>
+              <li>
+                <strong>35% increase in production visibility </strong> across
+                facilities.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "retail-operations": {
+    heroTitle: "Retail Operations Platform for a Multi-Store Chain ",
+    heroSubtitle: "Driving connected commerce through data and automation ",
+    heroImg:
+      "https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
+            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
+              A multi-outlet retail chain lacked unified visibility across
+              sales, inventory, and customer engagement. Disconnected POS
+              systems created reporting delays and stock inaccuracies. The goal
+              was to{" "}
+              <strong>
+                {" "}
+                build a centralized retail intelligence platform{" "}
+              </strong>{" "}
+              enabling faster decisions and personalized experiences.{" "}
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy developed a{" "}
+              <strong> cloud-based retail management platform </strong>
+              integrating POS, CRM, and inventory systems. Predictive models
+              optimized replenishment while analytics dashboards visualized
+              sales performance. Centralized APIs connected loyalty programs and
+              third-party e-commerce platforms.{" "}
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>Data consolidated from POS systems across stores.</li>
+              <li>
+                Automated replenishment triggered based on forecast demand.
+              </li>
+              <li>
+                Dashboards displayed sales, inventory, and profit metrics.
+              </li>
+              <li>
+                Loyalty and promotions data linked for customer insights.{" "}
+              </li>
+              <li>Alerts flagged underperforming SKUs and store anomalies. </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>⚙️ Frontend: Vue.js </li>
+              <li>🧠 Backend: Node.js + MySQL + AWS ECS + Power BI + Redis</li>
+              <li>☁️ Cloud: AWS </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                {" "}
+                <strong> 40% improvement in inventory accuracy.</strong>
+              </li>
+              <li>
+                {" "}
+                <strong> 30% faster replenishment cycles.</strong>
+              </li>
+              <li>
+                <strong>Unified visibility across 25+ stores </strong> enhancing
+                agility.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "healthcare-network-management": {
+    heroTitle: "Healthcare Network Management System ",
+    heroSubtitle: "Enabling connected, data-driven healthcare delivery ",
+    heroImg: healthCare,
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
+            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
+              A healthcare network needed to modernize hospital operations while
+              ensuring{" "}
+              <strong>data security, interoperability, and efficiency </strong>{" "}
+              . Paper-based records and siloed systems slowed down workflows and
+              reduced patient satisfaction. The objective was to digitize care
+              delivery through a secure, scalable platform.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy built a comprehensive hospital management solution
+              integrating patient registration, doctor scheduling, pharmacy, and
+              billing. EHR modules ensured secure data exchange between
+              departments, while dashboards provided administrators with
+              visibility into resource utilization and care efficiency.{" "}
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>Patients booked and tracked appointments online.</li>
+              <li>Doctors accessed unified health records and diagnostics.</li>
+              <li>Pharmacy and billing systems updated automatically.</li>
+              <li>
+                Admin dashboards visualized occupancy, turnaround time, and
+                performance.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>⚙️ Frontend: React </li>
+              <li>🧠 Backend: Java + PostgreSQL + REST APIs + OAuth 2.0 </li>
+              <li>☁️ Cloud: AWS </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong>45% faster patient onboarding.</strong>
+              </li>
+              <li>
+                <strong> 100% digital access to medical records.</strong>
+              </li>
+              <li>
+                <strong>Streamlined coordination </strong> across departments
+                and facilities.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+    ],
+  },
+  "smart-governance-portal": {
+    heroTitle: "Smart Governance Portal for Public Institutions ",
+    heroSubtitle: "Driving transparency and efficiency in digital governance ",
+    heroImg:
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timelineData: [
+      {
+        title: "Vision & Challenge ",
+        content: (
+          <div>
+            <p className="mb-8 text-sm text-neutral-800 dark:text-neutral-200">
+              A public institution aimed to simplify citizen services and
+              enhance accountability through a{" "}
+              <strong>centralized digital governance system </strong> .
+              Paper-based approvals and fragmented data led to inefficiency and
+              poor visibility. The goal was to digitize service delivery while
+              ensuring auditability and scalability.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Solution Blueprint ",
+        content: (
+          <div>
+            <p className="mb-6 text-sm text-neutral-800 dark:text-neutral-200">
+              Techcanopy developed a <strong> Smart Governance Portal </strong>{" "}
+              built on a low-latency, microservices-based architecture. It
+              digitized workflows, automated approvals, and provided
+              administrators real-time dashboards for performance tracking.
+              Citizen self-service features reduced dependency on physical
+              offices.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Experience Flow",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>Citizens submitted applications and documents digitally.</li>
+              <li>
+                Automated validations checked completeness and compliance.
+              </li>
+              <li>Workflow engines routed tasks dynamically for approval.</li>
+              <li>
+                Real-time dashboards displayed SLA compliance and service
+                trends.
+              </li>
+              <li>
+                System generated transparent audit logs for every transaction.
+              </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Technology",
+        content: (
+          <div>
+            <ul className="mb-6 text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+              <li>⚙️ Frontend: Angular </li>
+              <li>
+                🧠 Backend: Spring Boot + PostgreSQL + Power BI + Microservices
+              </li>
+              <li>☁️ Cloud: Azure </li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Impact",
+        content: (
+          <div>
+            <ul className="mb-6 list-disc pl-6 text-sm text-neutral-800 dark:text-neutral-200 space-y-2">
+              <li>
+                <strong> 70% reduction in service turnaround time. </strong>
+              </li>
+              <li>
+                <strong>Full traceability </strong> for audit and compliance.
+              </li>
+              <li>
+                <strong>Improved citizen satisfaction </strong> through
+                paperless processes.
+              </li>
+            </ul>
           </div>
         ),
       },
