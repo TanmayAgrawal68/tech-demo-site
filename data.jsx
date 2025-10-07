@@ -9,7 +9,7 @@ export const navItems = [
     name: "Solutions",
     dropdown: {
       layout: {
-        columnCount: 3,
+        columnCount: 2,
         width: "900px",
         gap: "1rem",
       },
@@ -17,28 +17,28 @@ export const navItems = [
         {
           type: "link",
           label: "Fintech",
-          href: "#development",
+          href: "/services/fintech",
           icon: <IconCode />,
           description: "Digital wallets, embedded finance, payment automation",
         },
         {
           type: "link",
           label: "Edtech",
-          href: "#design",
+          href: "/services/edtech",
           icon: <IconPalette />,
           description: "Adaptive learning, skill marketplaces, AI tutors",
         },
         {
           type: "link",
           label: "Hospitality",
-          href: "#analytics",
+          href: "/services/hospitality",
           icon: <IconPhoto />,
           description: "Smart booking, guest engagement, operational analytics",
         },
         {
           type: "link",
           label: "DOOH",
-          href: "#security",
+          href: "/services/dooh",
           icon: <IconBrandGithub />,
           description:
             "Streamlining inventory, operations, and campaign management",
@@ -46,7 +46,7 @@ export const navItems = [
         {
           type: "link",
           label: "Agritech",
-          href: "#hosting",
+          href: "/services/agritech",
           icon: <IconCode />,
           description:
             "Precision farming, crop analytics, supply chain platforms",
@@ -54,14 +54,14 @@ export const navItems = [
         {
           type: "link",
           label: "Telecom",
-          href: "#database",
+          href: "/services/telecom",
           icon: <IconPalette />,
           description: "Network orchestration, 5G solutions, IoT connectivity",
         },
         {
           type: "link",
           label: "Retail",
-          href: "#database",
+          href: "/services/retail",
           icon: <IconPalette />,
           description:
             "Omnichannel commerce, recommendation engines, inventory intelligence ",
@@ -69,16 +69,16 @@ export const navItems = [
         {
           type: "link",
           label: "Medtech",
-          href: "#database",
+          href: "/services/medtech",
           icon: <IconPalette />,
           description: "Patient management, streamlined health records ",
         },
-        {
-          type: "image",
-          src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=250&h=150&fit=crop",
-          alt: "Code example",
-          span: "full", // This will make the image span full width
-        },
+        // {
+        //   type: "image",
+        //   src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=250&h=150&fit=crop",
+        //   alt: "Code example",
+        //   span: "full", // This will make the image span full width
+        // },
       ],
     },
   },
@@ -662,41 +662,41 @@ export const homeData = {
     },
     {
       title: "Edtech Platforms",
-      path: "/products/cloud-solutions",
+      path: "/services/edtech",
       description:
         "Adaptive learning systems, skill marketplaces, and AI tutors",
     },
     {
       title: "Hospitality Tech",
-      path: "/products/ai-ml",
+      path: "/services/hospitality",
       description: "Smart booking, guest engagement, and operational analytics",
     },
     {
       title: "DOOH Automation",
-      path: "/products/ai-ml",
+      path: "/services/dooh",
       description:
         "Streamlining inventory, operations, and campaign management",
     },
     {
       title: "Agritech Systems",
-      path: "/products/ai-ml",
+      path: "/services/agritech",
       description:
         "Precision farming, crop analytics, and supply chain platforms",
     },
     {
       title: "Telecom Innovation",
-      path: "/products/ai-ml",
+      path: "/services/telecom",
       description: "Network orchestration, 5G enablement, and IoT connectivity",
     },
     {
       title: "Retail Intelligence",
-      path: "/products/ai-ml",
+      path: "/services/retail",
       description:
         "Omnichannel commerce, recommendation engines, and smart inventory",
     },
     {
       title: "Medtech Solutions",
-      path: "/products/ai-ml",
+      path: "/services/medtech",
       description: "Patient management and streamlined health records",
     },
   ],
@@ -766,9 +766,9 @@ We focus on: `,
           "With Techcanopy’s fintech expertise, financial institutions can innovate faster, reduce operational complexity, and deliver smarter financial experiences to their customers. We don’t just build software — we build the platforms that drive financial transformation",
       },
     },
-    development: {
-      title: "Custom Development",
-      subtitle: "Tailored Software Solutions for Your Unique Needs",
+    edtech: {
+      title: "Edtech",
+      subtitle: "Adaptive learning, skill marketplaces, and AI tutors",
       heroImage:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
       heroBackground: {
@@ -784,57 +784,60 @@ We focus on: `,
       sections: [
         {
           id: "overview",
-          title: "Bespoke Software Development",
+          title: "Reimagining the Future of Learning ",
           content:
-            "We create custom software solutions that perfectly fit your business requirements. From web applications to mobile apps, we deliver high-quality, scalable solutions.",
+            "Education is evolving at lightning speed, and learners expect personalized, engaging, and accessible experiences. At Techcanopy, we build Edtech platforms that make learning smarter, more adaptive, and more effective. From AI-powered tutors and skill marketplaces to interactive learning management systems, our solutions empower students, educators, and organizations to thrive in a digital-first learning ecosystem. We create custom software solutions that perfectly fit your business requirements. From web applications to mobile apps, we deliver high-quality, scalable solutions.",
           image:
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
           imagePosition: "right",
-          features: [
-            "Web Application Development",
-            "Mobile App Development",
-            "API Development & Integration",
-            "Database Design & Optimization",
-            "Third-Party System Integration",
-          ],
+          features: [],
         },
         {
           id: "process",
-          title: "Our Development Process",
-          content:
-            "We follow agile development methodologies to ensure transparent communication, rapid delivery, and high-quality results that exceed your expectations.",
+          title: "What We Offer ",
+          content: "",
           image:
             "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
           imagePosition: "left",
           features: [
-            "Requirements Analysis & Planning",
-            "UI/UX Design & Prototyping",
-            "Agile Development & Testing",
-            "Quality Assurance & Deployment",
-            "Ongoing Maintenance & Support",
+            "Personalized Learning Platforms & AI Tutors – Adaptive learning experiences tailored to individual needs. ",
+            "Adaptive Assessment & Feedback Engines – Instant, actionable insights to guide learning journeys. ",
+            "Skill Marketplaces & Credentialing Platforms – Connect learners with courses, certifications, and mentors. ",
+            "Learning Analytics Dashboards & Insights – Track progress, engagement, and outcomes across platforms. ",
+            "Gamification & Engagement Modules – Make learning fun, interactive, and motivating. ",
+            "LMS (Learning Management Systems) Integration – Seamless deployment for institutions and corporates. ",
+            "Virtual Classrooms & Collaboration Tools – Enable interactive online learning experiences. ",
+            "AI-Powered Content Recommendations – Suggest learning paths based on performance and interests. ",
+            "Student & Teacher Performance Tracking – Measure and improve outcomes effectively. ",
+            "Mobile-First Learning Experiences – Learning anytime, anywhere, on any device. ",
           ],
         },
         {
           id: "technologies",
-          title: "Technologies We Master",
-          content:
-            "Our development team is proficient in the latest technologies and frameworks, ensuring your solution is built with modern, scalable, and maintainable technologies.",
+          title: "How We Build It Differently ",
+          content: `We design Edtech solutions with learners and educators at the center. Every platform is built to be intuitive, adaptive, and scalable — combining AI, analytics, and modern UX principles. Our goal is to make education efficient, measurable, and engaging for everyone involved. 
+
+Our approach includes: `,
           image:
             "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=400&fit=crop",
           imagePosition: "right",
           features: [
-            "React, Vue.js, Angular",
-            "Node.js, Python, Java",
-            "AWS, Azure, Google Cloud",
-            "Docker, Kubernetes",
-            "MongoDB, PostgreSQL, MySQL",
+            "Data-driven personalization for optimized learning paths ",
+            "Agile development for fast iterations and feature enhancements ",
+            "Cloud-native architecture for scalability and reliability ",
+            "Continuous testing and feedback loops for effective outcomes ",
           ],
         },
       ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy, education platforms don’t just deliver content — they inspire growth, enhance learning, and prepare users for the future. We build solutions that empower educators, delight learners, and transform the way knowledge is shared. ",
+      },
     },
-    managed: {
-      title: "Managed Services",
-      subtitle: "24/7 IT Support and Infrastructure Management",
+    hospitality: {
+      title: "Hospitality ",
+      subtitle: "Smart booking, guest engagement, and operational analytics ",
       heroImage:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
       heroBackground: {
@@ -845,53 +848,379 @@ We focus on: `,
       sections: [
         {
           id: "overview",
-          title: "Comprehensive IT Management",
+          title: "Redefining Guest Experiences with Technology ",
           content:
-            "Our managed services provide round-the-clock support and proactive management of your IT infrastructure, ensuring maximum uptime and optimal performance.",
+            "In hospitality, every interaction matters. At Techcanopy, we build platforms that streamline operations, enhance guest engagement, and drive smarter business decisions. From intuitive booking engines to analytics dashboards, our solutions empower hotels, resorts, and hospitality chains to deliver exceptional experiences while optimizing internal workflows. ",
           image:
             "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
           imagePosition: "right",
-          features: [
-            "24/7 Monitoring & Support",
-            "Proactive Maintenance",
-            "Security Management",
-            "Backup & Disaster Recovery",
-            "Performance Optimization",
-          ],
+          features: [],
         },
         {
           id: "services",
-          title: "Managed Service Offerings",
-          content:
-            "We offer comprehensive managed services that cover all aspects of your IT infrastructure, from basic support to advanced security and compliance management.",
+          title: "What We Offer ",
+          content: "",
           image:
             "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
           imagePosition: "left",
           features: [
-            "Infrastructure Monitoring",
-            "Security Operations Center (SOC)",
-            "Database Administration",
-            "Cloud Infrastructure Management",
-            "Help Desk & User Support",
+            "Online Booking Engines & Reservations Platforms – Smooth, flexible, and reliable booking experiences. ",
+            "Guest Experience & Engagement Apps – Personalized communications, loyalty programs, and real-time updates. ",
+            "Revenue Management & Pricing Analytics – Data-driven strategies to maximize profitability. ",
+            "Operational Dashboards & Reporting – Monitor performance, occupancy, and key metrics in real time. ",
+            "Loyalty Programs & Personalized Offers – Boost repeat visits and customer satisfaction. ",
+            "Multi-Property Management Systems (PMS) – Centralized management for hotels, resorts, and chains. ",
+            "Contactless Check-In & Check-Out Solutions – Convenient, safe, and modern guest services. ",
+            "Staff Scheduling & Workforce Management – Optimize staffing for efficiency and service quality. ",
+            "Event & Conference Management Platforms – Seamless handling of bookings, schedules, and logistics. ",
+            "Smart Property & Facility Automation – IoT-enabled systems to monitor, control, and optimize operations. ",
           ],
         },
         {
           id: "benefits",
-          title: "Why Choose Our Managed Services",
-          content:
-            "Our managed services help you focus on your core business while we handle the complexity of IT management, providing cost-effective and reliable solutions.",
+          title: "How We Build It Differently ",
+          content: `We combine operational expertise with cutting-edge technology to create solutions that simplify management and enhance the guest journey. Every system is designed for ease of use, scalability, and measurable impact, helping hospitality businesses stay competitive in an increasingly digital world. 
+
+Our approach includes: `,
           image:
             "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
           imagePosition: "right",
           features: [
-            "Reduced IT Costs",
-            "Improved System Reliability",
-            "Enhanced Security Posture",
-            "Scalable Support Model",
-            "Expert Technical Team",
+            "User-centric design for both staff and guests ",
+            "Real-time insights to improve operations and decision-making ",
+            "Modular architecture for quick adaptation and expansion ",
+            "Secure and reliable platforms for seamless business continuity ",
           ],
         },
       ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy, hospitality platforms don’t just manage operations — they elevate guest experiences, boost efficiency, and drive business growth. We turn technology into a tool for memorable stays and operational excellence. ",
+      },
+    },
+    dooh: {
+      title: "DOOH (Digital Out-of-Home)",
+      subtitle: "Streamlining inventory, operations, and campaign management ",
+      heroImage:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      heroBackground: {
+        type: "gradient",
+        gradient: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+      },
+      heroOverlay: "light",
+      sections: [
+        {
+          id: "overview",
+          title: "Making Digital Out-of-Home Smarter ",
+          content:
+            "DOOH advertising is dynamic, fast-moving, and data-driven. At Techcanopy, we build platforms that optimize inventory, simplify operations, and enhance campaign performance for networks of digital displays. Our solutions empower media owners and advertisers to plan, deploy, and measure campaigns efficiently, while maximizing reach and ROI. ",
+          image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [],
+        },
+        {
+          id: "services",
+          title: "What We Offer ",
+          content: "",
+          image:
+            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+          imagePosition: "left",
+          features: [
+            "Inventory Management & Asset Tracking Systems – Keep all digital assets organized and accessible. ",
+            "Campaign Planning & Scheduling Tools – Plan campaigns with precision and deploy across multiple locations. ",
+            "Real-Time Analytics & Reporting Dashboards – Track performance and optimize campaigns instantly. ",
+            "Automated Booking & Ad Placement Systems – Simplify ad sales and placement processes. ",
+            "Audience Measurement & Insights – Understand who sees your ads and how they engage. ",
+            "Network Operations Monitoring – Ensure displays and systems operate flawlessly. ",
+            "Digital Signage Content Management – Schedule, update, and manage content seamlessly. ",
+            "API Integrations with Advertisers & Partners – Connect platforms for smoother workflows. ",
+            "Predictive Maintenance & Alerts – Minimize downtime with proactive monitoring. ",
+            "Multi-Location Campaign Optimization – Scale campaigns efficiently across geographies. ",
+          ],
+        },
+        {
+          id: "benefits",
+          title: "How We Build It Differently ",
+          content: `We design DOOH platforms with automation, scalability, and insights at the core. Our focus is on creating systems that reduce manual effort, enable smarter decision-making, and increase campaign effectiveness. Every solution is designed for operational efficiency and seamless integration with media workflows. 
+
+Our approach includes: `,
+          image:
+            "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [
+            "Data-driven decision-making to optimize ad spend ",
+            "Automation-first design to reduce operational overhead ",
+            "Scalable architecture for networks of any size ",
+            "Real-time monitoring and alerts for uninterrupted operations ",
+          ],
+        },
+      ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy’s DOOH solutions, media networks don’t just manage displays — they maximize audience engagement, streamline operations, and deliver measurable impact. We make digital out-of-home advertising simpler, smarter, and more profitable. ",
+      },
+    },
+    agritech: {
+      title: "Agritech",
+      subtitle:
+        "Precision farming, crop analytics, and supply chain platforms ",
+      heroImage:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      heroBackground: {
+        type: "gradient",
+        gradient: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+      },
+      heroOverlay: "light",
+      sections: [
+        {
+          id: "overview",
+          title: "Transforming Agriculture with Smart Technology ",
+          content:
+            "Farming is evolving, and data-driven insights are now essential for maximizing yield and efficiency. At Techcanopy, we build agritech solutions that empower farmers, agribusinesses, and cooperatives to make informed decisions, optimize operations, and modernize the entire agricultural value chain. From precision farming tools to crop analytics and supply chain platforms, our products help agriculture thrive in a digital-first world. ",
+          image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [],
+        },
+        {
+          id: "services",
+          title: "What We Offer ",
+          content: "",
+          image:
+            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+          imagePosition: "left",
+          features: [
+            "Crop Monitoring & Precision Farming Solutions – Track soil, water, and crop conditions for optimal yield. ",
+            "IoT Sensor Integration for Soil & Climate – Real-time environmental monitoring for smart farming decisions. ",
+            "Yield Prediction & Analytics Dashboards – Forecast production accurately and plan effectively. ",
+            "Supply Chain & Logistics Platforms – Streamline farm-to-market operations and reduce wastage. ",
+            "Farm-to-Consumer Traceability Systems – Ensure transparency and compliance across the supply chain. ",
+            "Automated Irrigation & Resource Management – Efficiently manage water, fertilizer, and other resources. ",
+            "Pest & Disease Detection Tools – Early warnings using AI and IoT for crop protection. ",
+            "Farmer Marketplaces & Trading Platforms – Connect producers with buyers and suppliers digitally. ",
+            "Drone & Satellite Data Integration – Advanced imaging for monitoring large-scale farms. ",
+            "Sustainable Agriculture Planning – Tools for environmental-friendly and cost-effective farming. ",
+          ],
+        },
+        {
+          id: "benefits",
+          title: "How We Build It Differently ",
+          content: `We combine agriculture expertise with modern technology to create solutions that are actionable, scalable, and easy to adopt. Our platforms integrate IoT, analytics, and automation to help farmers make smarter decisions, increase productivity, and reduce operational costs. 
+
+Our approach includes: `,
+          image:
+            "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [
+            "Data-driven farming insights for precision decision-making ",
+            "Modular platforms that scale from small farms to large agribusinesses ",
+            "Cloud-enabled analytics for anytime, anywhere access ",
+            "Seamless integration with existing farm workflows ",
+          ],
+        },
+      ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy’s Agritech solutions, farmers and agribusinesses don’t just manage operations — they optimize yield, improve sustainability, and modernize agriculture for the digital age. Our tools empower smarter decisions, healthier crops, and stronger businesses. ",
+      },
+    },
+    telecom: {
+      title: "Telecom",
+      subtitle: "Network orchestration, 5G solutions, and IoT connectivity ",
+      heroImage:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      heroBackground: {
+        type: "gradient",
+        gradient: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+      },
+      heroOverlay: "light",
+      sections: [
+        {
+          id: "overview",
+          title: "Connecting the Future of Communication ",
+          content:
+            "The telecom landscape is rapidly evolving, with 5G, IoT, and cloud-native networks transforming how people and devices connect. At Techcanopy, we build telecom platforms that simplify network management, optimize performance, and enable innovative services. From network orchestration tools to IoT connectivity solutions, our platforms empower operators to deliver faster, smarter, and more reliable communication experiences. ",
+          image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [],
+        },
+        {
+          id: "services",
+          title: "What We Offer ",
+          content: "",
+          image:
+            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+          imagePosition: "left",
+          features: [
+            "5G Network Planning & Deployment Tools – Simplify rollout and optimize network coverage. ",
+            "IoT Device Management Platforms – Monitor, control, and scale IoT networks efficiently. ",
+            "Network Orchestration & Monitoring Systems – Automate operations and ensure uptime. ",
+            "Call Detail Record (CDR) Analytics & Insights – Gain actionable intelligence from network usage. ",
+            "Customer Self-Service Portals & Apps – Empower subscribers with seamless digital experiences. ",
+            "Automated Billing & Payment Systems – Streamline invoicing and payment collection. ",
+            "Cloud-Native Communication Platforms – Scalable and flexible infrastructure for modern telecom. ",
+            "Predictive Maintenance & Performance Optimization – Reduce downtime and enhance reliability. ",
+            "API & Integration Frameworks for Telecom Services – Connect internal and external systems seamlessly. ",
+            "AI-Powered Network Analytics – Optimize performance and anticipate network issues. ",
+          ],
+        },
+        {
+          id: "benefits",
+          title: "How We Build It Differently ",
+          content: `We design telecom solutions with automation, scalability, and intelligence at the core. Our platforms integrate cloud, AI, and data analytics to streamline operations, improve customer experiences, and enable faster innovation. Every solution is built for high reliability, minimal downtime, and seamless integration. 
+
+Our approach includes: `,
+          image:
+            "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [
+            "Data-driven network management for smarter decision-making ",
+            "Cloud-native architecture for scalability and flexibility ",
+            "Automation-first design to reduce manual operational overhead ",
+            "Continuous monitoring and analytics for proactive performance optimization ",
+          ],
+        },
+      ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy’s telecom solutions, operators don’t just manage networks — they unlock the full potential of connectivity, innovate faster, and deliver exceptional experiences to their subscribers. Our tools help businesses stay ahead in a rapidly evolving communications landscape. ",
+      },
+    },
+    retail: {
+      title: "Retail ",
+      subtitle:
+        "Omnichannel commerce, recommendation engines, and inventory intelligence ",
+      heroImage:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      heroBackground: {
+        type: "gradient",
+        gradient: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+      },
+      heroOverlay: "light",
+      sections: [
+        {
+          id: "overview",
+          title: "Empowering Modern Retail with Technology ",
+          content:
+            "The retail industry is evolving faster than ever, with customers expecting seamless, personalized experiences across every channel. At Techcanopy, we build retail platforms that integrate online and offline operations, deliver smart insights, and enhance customer engagement. From omnichannel commerce solutions to intelligent inventory management, our products help retailers stay competitive and future-ready. ",
+          image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [],
+        },
+        {
+          id: "services",
+          title: "What We Offer ",
+          content: "",
+          image:
+            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+          imagePosition: "left",
+          features: [
+            "E-Commerce & Omnichannel Platforms – Unified shopping experiences across web, mobile, and in-store. ",
+            "Recommendation Engines & Personalization Modules – Deliver tailored suggestions that boost engagement and sales. ",
+            "Inventory Management & Demand Forecasting – Optimize stock levels and reduce wastage. ",
+            "Customer Analytics & Loyalty Programs – Understand shopper behavior and drive retention. ",
+            "POS (Point of Sale) Systems & Integrations – Seamless in-store transactions and reporting. ",
+            "Supply Chain Optimization Tools – Streamline operations from procurement to delivery. ",
+            "Dynamic Pricing & Promotions Management – Adjust pricing in real-time for maximum impact. ",
+            "Mobile Shopping & Engagement Apps – Enhance the shopping experience on-the-go. ",
+            "Store Traffic & Sales Analytics – Make data-driven merchandising and operational decisions. ",
+            "Returns & Reverse Logistics Automation – Simplify returns and minimize operational overhead. ",
+          ],
+        },
+        {
+          id: "benefits",
+          title: "How We Build It Differently ",
+          content: `We design retail solutions with customer experience and operational efficiency at the forefront. Our platforms are scalable, modular, and built with modern technology to support omnichannel strategies. By combining analytics, automation, and personalized experiences, we help retailers make smarter decisions, faster. 
+
+Our approach includes: `,
+          image:
+            "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [
+            "Data-driven personalization to increase engagement and conversion ",
+            "Agile, scalable architecture for rapid growth and expansion ",
+            "Real-time inventory & operational insights for optimized decision-making ",
+            "Seamless integration across platforms, stores, and marketplaces ",
+          ],
+        },
+      ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy’s retail solutions, businesses don’t just sell — they engage customers, optimize operations, and drive growth. Our technology transforms how retailers interact with their customers and manage their operations in a competitive landscape. ",
+      },
+    },
+    medtech: {
+      title: "Medtech ",
+      subtitle:
+        "Patient management, streamlined health records, and digital care solutions ",
+      heroImage:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      heroBackground: {
+        type: "gradient",
+        gradient: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+      },
+      heroOverlay: "light",
+      sections: [
+        {
+          id: "overview",
+          title: "Transforming Healthcare Through Technology ",
+          content:
+            "Healthcare is moving rapidly toward digital-first experiences, and accurate, accessible information is key. At Techcanopy, we build Medtech platforms that simplify patient management, enhance care delivery, and streamline health records. From EHR systems to telemedicine solutions, our products help hospitals, clinics, and healthcare providers operate efficiently while improving patient outcomes. ",
+          image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [],
+        },
+        {
+          id: "services",
+          title: "What We Offer ",
+          content: "",
+          image:
+            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+          imagePosition: "left",
+          features: [
+            "Electronic Health Records (EHR) & EMR Systems – Centralized, secure patient data management. ",
+            "Patient Management & Appointment Scheduling – Simplified workflows for staff and better experiences for patients. ",
+            "Telemedicine & Virtual Care Platforms – Remote consultations and healthcare delivery made easy. ",
+            "Health Analytics Dashboards & Insights – Actionable insights for clinical and operational decision-making. ",
+            "Prescription & Pharmacy Management Systems – Efficient, accurate, and compliant medication workflows. ",
+            "Laboratory & Diagnostic Integrations – Seamless access to test results and diagnostics. ",
+            "Remote Patient Monitoring Tools – Track patient health in real time, from anywhere. ",
+            "AI-Assisted Diagnosis & Predictive Analytics – Improve accuracy and anticipate patient needs. ",
+            "Secure Health Data Exchange & Interoperability – Enable smooth communication across healthcare providers. ",
+            "Regulatory Compliance & Audit Reporting – Ensure adherence to healthcare standards and laws. ",
+          ],
+        },
+        {
+          id: "benefits",
+          title: "How We Build It Differently ",
+          content: `We design Medtech solutions with accuracy, reliability, and patient safety at the core. Our platforms integrate modern technology, analytics, and automation to streamline healthcare operations while supporting clinicians in delivering high-quality care. 
+
+Our approach includes: `,
+          image:
+            "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+          imagePosition: "right",
+          features: [
+            "User-centered design for clinicians, staff, and patients ",
+            "Secure, compliant systems built to meet strict healthcare standards ",
+            "Scalable, modular architecture to grow with your healthcare operations ",
+            "Data-driven insights for better clinical and operational decisions ",
+          ],
+        },
+      ],
+      blockquote: {
+        title: "The Result",
+        content:
+          "With Techcanopy’s Medtech solutions, healthcare providers don’t just manage patients — they deliver smarter, safer, and more connected care. Our technology empowers providers to improve outcomes, optimize workflows, and stay ahead in a rapidly evolving healthcare landscape. ",
+      },
     },
   },
   productLinks: [
