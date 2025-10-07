@@ -35,7 +35,7 @@ function App() {
             </TabPageLayout>
           }
         />
-        <Route path="/case" element={<CaseStudies />} />
+        <Route path="/case/:slug" element={<CaseStudies />} />
       </Routes>
     </BrowserRouter>
   );

@@ -122,7 +122,7 @@ function Hero() {
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center ">
         {/* <FlipWordsDemo /> */}
         <HeroText />
-        <div className="pt-8 pb-6 flex flex-col md:flex-row justify-center items-center md: gap-10 w-full ">
+        <div className="pt-12 pb-6 flex flex-col md:flex-row justify-center items-center md: gap-10 w-full ">
           {/* <Button variant="secondary">Book a meeting</Button> */}
           <CtaHeroButton
             text="Book a meeting"

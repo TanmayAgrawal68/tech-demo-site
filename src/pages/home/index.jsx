@@ -27,6 +27,7 @@ import {
 import { HeroParallaxDemo } from "../../components/ui/aceternity/HeroParallaxDemo";
 import { AnimatedTestimonialsDemo } from "../../components/ui/aceternity/AnimatedTestimonialDemo";
 import { DraggableCardDemo } from "../../components/ui/aceternity/DraggableCardDemo";
+import InfiniteTextCorousal from "../../components/InfiniteTextCorousal";
 
 // tabs section reserved for future use
 
@@ -55,6 +56,22 @@ function Home() {
       {/* Removed demo from production UI */}
       {/* <Testimonials /> */}
       <AnimatedTestimonialsDemo />
+      <div className="pt-10 pb-12 mt-20 mb-22">
+        <InfiniteTextCorousal
+          text={
+            <p>
+              <span className="text-gray-500">Empowering</span> Customers,
+              <span className="text-gray-500">Elevating</span> Success
+            </p>
+          }
+          speed="normal"
+          loop={true}
+          gapPx={100}
+          direction="left"
+          className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-secondary"
+          fontFamily="'Inter', sans-serif"
+        ></InfiniteTextCorousal>
+      </div>
       <Footer />
     </>
   );

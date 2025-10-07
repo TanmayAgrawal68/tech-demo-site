@@ -1,6 +1,7 @@
 import React from "react";
 import TabPageLayout from "../../layout/TabPageLayout";
 import { Timeline } from "../../components/ui/timeline";
+import { caseData } from "../../../data";
 const data = [
   {
     title: "Vision & Challenge",
@@ -179,6 +180,8 @@ const data = [
     ),
   },
 ];
+import { useParams } from "react-router-dom";
+
 // src/components/HeroSection.jsx
 export function HeroSection({
   title,
@@ -216,18 +219,19 @@ export function HeroSection({
 }
 
 function CaseStudies() {
+  const { slug } = useParams();
+  const { heroTitle, heroSubtitle, heroImg, timelineData } = caseData[slug];
+  console.log("hero : ", heroTitle);
   return (
     <TabPageLayout>
       <HeroSection
-        title="Changelog from my journey"
-        subtitle="I’ve been working on Aceternity for the past 2 years. Here's a timeline of my journey."
-        bgImage={
-          "https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
+        title={heroTitle}
+        subtitle={heroSubtitle}
+        bgImage={heroImg}
         overlayColor="rgba(0,0,0,0.5)"
       />
       <div className="relative w-full overflow-clip">
-        <Timeline data={data} />
+        <Timeline data={timelineData} />
       </div>
     </TabPageLayout>
   );
