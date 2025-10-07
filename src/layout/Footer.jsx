@@ -1,6 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import techcanopy from "../assets/tec-log.svg";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="relative border-t border-border mt-24">
@@ -18,10 +25,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-semibold">TechCanopy</h3>
-            <p className="mt-2 text-sm text-foreground/70 max-w-xs">
-              We design and build scalable digital products and platforms.
+            <img alt="techcanopy" src={techcanopy} height={100} width={200} />
+            <p className="text-sm mt-4 text-primary max-w-xs">
+              A product Engineering Company.
             </p>
+            <a href="https://www.google.com/maps/place/Techcanopy+Software+Labs/@12.9189023,77.5091907,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3e566fb5c549:0xf725e53d7ffbdeb8!8m2!3d12.9189023!4d77.5091907!16s%2Fg%2F11fnl50x51?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D">
+              <p className="whitespace-pre-wrap text-primary/80">
+                1st Floor, No-03, Survey no: 2/4, Remco Bhel Layout,
+                Pattanagere, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098
+              </p>
+            </a>
           </div>
           <div>
             <h4 className="font-semibold">Company</h4>
@@ -65,7 +78,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold">Stay up to date</h4>
-            <form className="mt-3 flex flex-col md:flex-row items-center gap-2">
+            {/* <form className="mt-3 flex flex-col md:flex-row items-center gap-2">
               <input
                 className="flex-1 rounded-xl border border-border bg-card text-card-foreground px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ring/50"
                 placeholder="Enter your email"
@@ -78,7 +91,37 @@ export default function Footer() {
               >
                 Subscribe
               </button>
-            </form>
+            </form> */}
+            {/* social */}
+            <div className="flex justify-center text-primary/90 mt-5  items-center gap-6 mb-6 py-4 rounded-xl bg-gradient-to-br from-secondary/50 to-100% ">
+              <a
+                href="https://www.instagram.com/techcanopysl?igsh=MW0xa2EzYmg5M295cA=="
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram className="hover:scale-110 transition" size={22} />
+              </a>
+              {/* <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <FaFacebook className="hover:scale-110 transition" size={22} />
+        </a> */}
+              <a
+                href="https://www.linkedin.com/company/techcanopysl/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin className="hover:scale-110 transition" size={22} />
+              </a>
+              <a
+                href="https://x.com/techcanopysl?s=21"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaTwitter className="hover:scale-110 transition" size={22} />
+              </a>
+              <a href="mailto:interact@techcanopy.com">
+                <FaEnvelope className="hover:scale-110 transition" size={22} />
+              </a>
+            </div>
           </div>
         </div>
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between text-xs text-foreground/60">

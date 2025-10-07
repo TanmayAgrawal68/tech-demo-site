@@ -3,7 +3,23 @@ import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "@/components/ui/draggable-card";
-
+import aws from "../../assets/techLogos/aws-original.svg";
+import docker from "../../assets/techLogos/docker-original.svg";
+import drag from "../../assets/techLogos/drag-original.svg";
+import graph from "../../assets/techLogos/graphql-plain.svg";
+import kubernetes from "../../assets/techLogos/kubernetes-plain.svg";
+import prisma from "../../assets/techLogos/prisma-original.svg";
+import reactLogo from "../../assets/techLogos/react.svg";
+import redis from "../../assets/techLogos/redis-original.svg";
+import tailwind from "../../assets/techLogos/tailwindcss-original.svg";
+import vite from "../../assets/techLogos/vitejs-original.svg";
+import express from "../../assets/techLogos/express-original.svg";
+import mongo from "../../assets/techLogos/mongodb-original.svg";
+import nextJS from "../../assets/techLogos/nextjs-original.svg";
+import nodejs from "../../assets/techLogos/nodejs-original.svg";
+import postgress from "../../assets/techLogos/postgresql-original.svg";
+import typescriptLogo from "../../assets/techLogos/typescript-original.svg";
+import CustomTextAnimation from "../../components/CustomTextAnimation";
 export function TechStackDraggable({
   cardWidth = "w-24 md:w-42",
   cardMinHeight = "min-h-42 md:min-h-42",
@@ -13,78 +29,67 @@ export function TechStackDraggable({
   const items = [
     {
       title: "React",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+      image: reactLogo,
     },
     {
       title: "Next.js",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+      image: nextJS,
     },
     {
       title: "TypeScript",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      image: typescriptLogo,
     },
     {
       title: "Node.js",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+      image: nodejs,
     },
     {
       title: "Express",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+      image: express,
     },
     {
       title: "PostgreSQL",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+      image: postgress,
     },
     {
       title: "MongoDB",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
+      image: mongo,
     },
     {
       title: "Redis",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
+      image: redis,
     },
     {
       title: "Docker",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+      image: docker,
     },
     {
       title: "Kubernetes",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg",
+      image: kubernetes,
     },
     {
       title: "AWS",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg",
+      image: aws,
     },
     {
       title: "Tailwind CSS",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+      image: tailwind,
     },
     {
       title: "Vite",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg",
+      image: vite,
     },
     {
       title: "Prisma",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg",
+      image: prisma,
     },
     {
       title: "GraphQL",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg",
+      image: graph,
+    },
+    {
+      title: "Feel Free to play Arround",
+      image: drag,
     },
   ];
 
@@ -138,12 +143,15 @@ export function TechStackDraggable({
     <section className="relative w-[screen] py-16 md:py-24 ">
       <div className="mx-auto w-full ">
         <div className="mb-10 md:mb-14 text-center">
-          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground">
-            Tech Stack
-          </h2>
-          <p className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto">
-            The ingredients that makes the magic happen!
-          </p>
+          <CustomTextAnimation
+            text="Tech Stack"
+            type="fadeIn"
+            className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground"
+          />
+          <CustomTextAnimation
+            text="The ingredients that makes the magic happen!"
+            className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto"
+          />
         </div>
       </div>
 

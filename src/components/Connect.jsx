@@ -5,7 +5,9 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaTwitter,
 } from "react-icons/fa";
+
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -23,16 +25,31 @@ export const ConnectModal = ({ onClose }) => {
     <AnimatedModal onClose={onClose}>
       {/* Gradient Header */}
       <div className="flex justify-center text-primary/90 mt-5  items-center gap-6 mb-6 py-4 rounded-xl bg-gradient-to-br from-secondary/50 to-100% ">
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.instagram.com/techcanopysl?igsh=MW0xa2EzYmg5M295cA=="
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaInstagram className="hover:scale-110 transition" size={22} />
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+        {/* <a href="https://facebook.com" target="_blank" rel="noreferrer">
           <FaFacebook className="hover:scale-110 transition" size={22} />
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+        </a> */}
+        <a
+          href="https://www.linkedin.com/company/techcanopysl/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaLinkedin className="hover:scale-110 transition" size={22} />
         </a>
-        <a href="mailto:someone@example.com">
+        <a
+          href="https://x.com/techcanopysl?s=21"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaTwitter className="hover:scale-110 transition" size={22} />
+        </a>
+        <a href="mailto:interact@techcanopy.com">
           <FaEnvelope className="hover:scale-110 transition" size={22} />
         </a>
       </div>

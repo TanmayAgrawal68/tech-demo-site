@@ -218,6 +218,12 @@ export const sampleTechLogos = [
     width: 80,
     height: 80,
   },
+  {
+    src: "https://dummyimage.com/80x80/000000/fff.png&text=AWS",
+    name: "AWS",
+    width: 80,
+    height: 80,
+  },
 ];
 
 import {

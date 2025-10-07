@@ -30,7 +30,7 @@ import { DraggableCardDemo } from "../../components/ui/aceternity/DraggableCardD
 import InfiniteTextCorousal from "../../components/InfiniteTextCorousal";
 import team from "../../assets/team.webp";
 // tabs section reserved for future use
-
+import CustomTextAnimation from "../../components/CustomTextAnimation";
 function Home() {
   return (
     <>
@@ -54,7 +54,20 @@ function Home() {
       <Team />
       {/* Removed demo from production UI */}
       {/* <Testimonials /> */}
-      <AnimatedTestimonialsDemo />
+      <div className="mt-28 mb-20 flex justify-center items-center flex-col">
+        <CustomTextAnimation
+          text="Hear the Buzz"
+          type="fadeIn"
+          className="text-primary font-bold text-xl md:text-4xl lg:text-5xl"
+        />
+        <CustomTextAnimation
+          type="whipIn"
+          text="Stories from the Frontline"
+          className="mt-2 text-primary/80"
+        />
+
+        <AnimatedTestimonialsDemo />
+      </div>
       <div className="pt-10 pb-12 mt-20 mb-22">
         <InfiniteTextCorousal
           text={
