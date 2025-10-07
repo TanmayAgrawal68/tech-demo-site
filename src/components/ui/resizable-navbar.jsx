@@ -46,7 +46,7 @@ export const NavBody = ({ children, className, visible }) => {
       animate={{
         backdropFilter: visible ? "blur(5px)" : "none",
         boxShadow: visible ? "var(--shadow-lg)" : "none",
-        width: visible ? "50%" : "100%",
+        width: visible ? "70%" : "100%",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -58,7 +58,7 @@ export const NavBody = ({ children, className, visible }) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex",
+        "relative z-[60] mx-auto hidden w-full max-w-[1400px] flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-3 lg:flex",
         visible && "bg-background/95",
         className
       )}
@@ -215,7 +215,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
           <NavDropdown
             key={`dropdown-${idx}`}
             items={item.dropdown}
-            className="relative px-4 py-2 text-foreground"
+            className="relative px-1 py-2 text-foreground"
           >
             <span className="relative z-20">{item.name}</span>
           </NavDropdown>
@@ -414,7 +414,7 @@ export const NavbarButton = ({
   ...props
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-md text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-full text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary: "bg-secondary text-primary-foreground shadow-lg",

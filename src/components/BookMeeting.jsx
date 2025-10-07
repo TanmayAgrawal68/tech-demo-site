@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { sendEmail } from "../services/emailService";
 
 export const BookMeetingModal = ({ onClose }) => {
   const [form, setForm] = useState({
@@ -14,9 +15,15 @@ export const BookMeetingModal = ({ onClose }) => {
     description: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Meeting Form Data:", form);
+    const { success } = await sendEmail(form);
+    if (success) {
+      alert("email sent success");
+    } else {
+      alert("something went wrong!!");
+    }
     onClose();
   };
 

@@ -43,7 +43,7 @@ export function NavbarDemo({ children }) {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
+          <div className="flex items-center ">
             <NavbarButton
               variant="secondary"
               onClick={() => setShowMeetingModal(true)}
