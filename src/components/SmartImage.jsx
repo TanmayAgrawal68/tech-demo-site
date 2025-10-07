@@ -46,8 +46,8 @@ export function SmartImage({
       if (!containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
 
-      const start = windowHeight * 0.3;
-      const end = windowHeight * 0.2;
+      const start = windowHeight * 0.7;
+      const end = windowHeight * 0.5;
 
       const clampedTop = Math.min(Math.max(rect.top, end), start);
       let progress = (start - clampedTop) / (start - end);

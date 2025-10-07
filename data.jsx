@@ -6,55 +6,72 @@ import {
 } from "@tabler/icons-react";
 export const navItems = [
   {
-    name: "Features",
+    name: "Solutions",
     dropdown: {
       layout: {
-        columnCount: 4,
+        columnCount: 3,
         width: "900px",
         gap: "1rem",
       },
       items: [
         {
           type: "link",
-          label: "Development",
+          label: "Fintech",
           href: "#development",
           icon: <IconCode />,
-          description: "Build your next project with our tools",
+          description: "Digital wallets, embedded finance, payment automation",
         },
         {
           type: "link",
-          label: "Design",
+          label: "Edtech",
           href: "#design",
           icon: <IconPalette />,
-          description: "Create beautiful user interfaces",
+          description: "Adaptive learning, skill marketplaces, AI tutors",
         },
         {
           type: "link",
-          label: "Analytics",
+          label: "Hospitality",
           href: "#analytics",
           icon: <IconPhoto />,
-          description: "Track your application performance",
+          description: "Smart booking, guest engagement, operational analytics",
         },
         {
           type: "link",
-          label: "Security",
+          label: "DOOH",
           href: "#security",
           icon: <IconBrandGithub />,
-          description: "Keep your application secure",
+          description:
+            "Streamlining inventory, operations, and campaign management",
         },
         {
           type: "link",
-          label: "Hosting",
+          label: "Agritech",
           href: "#hosting",
           icon: <IconCode />,
-          description: "Deploy your application",
+          description:
+            "Precision farming, crop analytics, supply chain platforms",
         },
         {
           type: "link",
-          label: "Database",
+          label: "Telecom",
           href: "#database",
           icon: <IconPalette />,
-          description: "Store your application data",
+          description: "Network orchestration, 5G solutions, IoT connectivity",
+        },
+        {
+          type: "link",
+          label: "Retail",
+          href: "#database",
+          icon: <IconPalette />,
+          description:
+            "Omnichannel commerce, recommendation engines, inventory intelligence ",
+        },
+        {
+          type: "link",
+          label: "Medtech",
+          href: "#database",
+          icon: <IconPalette />,
+          description: "Patient management, streamlined health records ",
         },
         {
           type: "image",
@@ -66,7 +83,7 @@ export const navItems = [
     },
   },
   {
-    name: "Resources",
+    name: "Case studies",
     dropdown: [
       {
         type: "link",
@@ -83,7 +100,7 @@ export const navItems = [
     ],
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     link: "#contact",
   },
 ];
