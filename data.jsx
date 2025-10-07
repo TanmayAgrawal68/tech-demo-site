@@ -181,8 +181,8 @@ export const navItems = [
     },
   },
   {
-    name: "Contact Us",
-    link: "#contact",
+    name: "Careers",
+    link: "https://careerportal.tslplatforms.com/#job-openings",
   },
 ];
 

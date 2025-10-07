@@ -36,48 +36,87 @@ export default function Footer() {
               </p>
             </a>
           </div>
-          <div>
-            <h4 className="font-semibold">Company</h4>
+          {/* domains */}
+          <div className="text-center">
+            <h4 className="font-semibold">Product Engineering</h4>
             <ul className="mt-3 space-y-2 text-sm text-foreground/70">
+              {/* Added service links */}
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
-                  About
+                <a
+                  href="/services/fintech"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Fintech Solutions
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
-                  Careers
+                <a
+                  href="/services/edtech"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Edtech Platforms
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
-                  Blog
+                <a
+                  href="/services/hospitality"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Hospitality Tech
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services/dooh"
+                  className="hover:text-secondary transition-colors"
+                >
+                  DOOH Automation
                 </a>
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold">Resources</h4>
-            <ul className="mt-3 space-y-2 text-sm text-foreground/70">
+
+          {/* case studies */}
+          <div className="text-center">
+            <h4 className="font-semibold"></h4>
+            <ul className="mt-8 space-y-2 text-sm text-foreground/70">
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
-                  Docs
+                <a
+                  href="/services/agritech"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Agritech Systems
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
-                  Support
+                <a
+                  href="/services/telecom"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Telecom Innovation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
-                  Contact
+                <a
+                  href="/services/retail"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Retail Intelligence
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services/medtech"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Medtech Solutions
                 </a>
               </li>
             </ul>
           </div>
+          {/* social media */}
           <div>
-            <h4 className="font-semibold">Stay up to date</h4>
+            <h4 className="font-semibold text-center">Stay up to date</h4>
             {/* <form className="mt-3 flex flex-col md:flex-row items-center gap-2">
               <input
                 className="flex-1 rounded-xl border border-border bg-card text-card-foreground px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ring/50"
@@ -93,7 +132,7 @@ export default function Footer() {
               </button>
             </form> */}
             {/* social */}
-            <div className="flex justify-center text-primary/90 mt-5  items-center gap-6 mb-6 py-4 rounded-xl bg-gradient-to-br from-secondary/50 to-100% ">
+            <div className="flex justify-center text-primary/90 mt-5  items-center gap-4 mb-6 py-4  ">
               <a
                 href="https://www.instagram.com/techcanopysl?igsh=MW0xa2EzYmg5M295cA=="
                 target="_blank"
@@ -124,6 +163,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        {/* privacy */}
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between text-xs text-foreground/60">
           <p>© {new Date().getFullYear()} TechCanopy. All rights reserved.</p>
           <div className="flex items-center gap-4 mt-2 md:mt-0">

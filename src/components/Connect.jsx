@@ -11,13 +11,22 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { sendConnectionEmail } from "../services/emailService";
 
 export const ConnectModal = ({ onClose }) => {
   const [form, setForm] = useState({ name: "", phone: "" });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Connect Form Data:", form);
+    const { success } = await sendConnectionEmail(form);
+    if (success) {
+      alert(
+        "Thanks for connecting with techcanopy we will reach you shortly!!"
+      );
+    } else {
+      alert("Something went wrong!, please try again later");
+    }
     onClose();
   };
 
@@ -73,7 +82,14 @@ export const ConnectModal = ({ onClose }) => {
           <Input
             type="tel"
             value={form.phone}
-            onChange={(e) => setForm({ ...form, phone: e.target.value })}
+            onChange={(e) => {
+              // Allow only digits
+              const value = e.target.value.replace(/\D/g, "");
+              setForm({ ...form, phone: value });
+            }}
+            pattern="[0-9]{10}" // Exactly 10 digits
+            maxLength={10} // Optional, restrict input length
+            placeholder="Enter 10-digit phone number"
             required
           />
         </div>

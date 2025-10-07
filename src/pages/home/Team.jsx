@@ -116,7 +116,7 @@ export function Team() {
   const items = useMemo(() => team, []);
 
   return (
-    <section className="relative py-24 md:py-36">
+    <section className="relative py-24 md:py-12">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-10 md:mb-14 text-center">
           <CustomTextAnimation
