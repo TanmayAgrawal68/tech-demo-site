@@ -894,7 +894,7 @@ export const homeData = {
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
       heroBackground: {
         type: "image",
-        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=800&fit=crop",
+        src: "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       heroOverlay: "dark",
       sections: [
