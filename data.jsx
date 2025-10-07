@@ -4,6 +4,21 @@ import {
   IconPalette,
   IconPhoto,
 } from "@tabler/icons-react";
+import { GiFarmer } from "react-icons/gi";
+import { GiMoneyStack } from "react-icons/gi";
+import { FaComputer, FaUserDoctor } from "react-icons/fa6";
+import { FaHospitalUser } from "react-icons/fa";
+import { MdOutlineCampaign } from "react-icons/md";
+import { GiNetworkBars } from "react-icons/gi";
+import { TbShoppingCartFilled } from "react-icons/tb";
+import { LuNotebookPen } from "react-icons/lu";
+import { BsDatabaseFillAdd } from "react-icons/bs";
+import { MdDataObject } from "react-icons/md";
+import { CiStethoscope } from "react-icons/ci";
+import { RiGovernmentLine } from "react-icons/ri";
+
+import { CiBank } from "react-icons/ci";
+
 import healthCare from "./src/assets/case-studies/health-care.jpg";
 export const navItems = [
   {
@@ -19,28 +34,28 @@ export const navItems = [
           type: "link",
           label: "Fintech",
           href: "/services/fintech",
-          icon: <IconCode />,
+          icon: <GiMoneyStack />,
           description: "Digital wallets, embedded finance, payment automation",
         },
         {
           type: "link",
           label: "Edtech",
           href: "/services/edtech",
-          icon: <IconPalette />,
+          icon: <FaComputer />,
           description: "Adaptive learning, skill marketplaces, AI tutors",
         },
         {
           type: "link",
           label: "Hospitality",
           href: "/services/hospitality",
-          icon: <IconPhoto />,
+          icon: <FaHospitalUser />,
           description: "Smart booking, guest engagement, operational analytics",
         },
         {
           type: "link",
           label: "DOOH",
           href: "/services/dooh",
-          icon: <IconBrandGithub />,
+          icon: <MdOutlineCampaign />,
           description:
             "Streamlining inventory, operations, and campaign management",
         },
@@ -48,7 +63,7 @@ export const navItems = [
           type: "link",
           label: "Agritech",
           href: "/services/agritech",
-          icon: <IconCode />,
+          icon: <GiFarmer />,
           description:
             "Precision farming, crop analytics, supply chain platforms",
         },
@@ -56,14 +71,14 @@ export const navItems = [
           type: "link",
           label: "Telecom",
           href: "/services/telecom",
-          icon: <IconPalette />,
+          icon: <GiNetworkBars />,
           description: "Network orchestration, 5G solutions, IoT connectivity",
         },
         {
           type: "link",
           label: "Retail",
           href: "/services/retail",
-          icon: <IconPalette />,
+          icon: <TbShoppingCartFilled />,
           description:
             "Omnichannel commerce, recommendation engines, inventory intelligence ",
         },
@@ -71,7 +86,7 @@ export const navItems = [
           type: "link",
           label: "Medtech",
           href: "/services/medtech",
-          icon: <IconPalette />,
+          icon: <FaUserDoctor />,
           description: "Patient management, streamlined health records ",
         },
         // {
@@ -96,6 +111,7 @@ export const navItems = [
           type: "link",
           label: "Intelligent Loan Management Platform for a Leading NBFC",
           href: "/case/intelligent-loan-management",
+          icon: <CiBank />,
           description:
             "Redefining lending efficiency through automation, compliance, and data intelligence ",
         },
@@ -104,6 +120,8 @@ export const navItems = [
           type: "link",
           label: "Smart Food Logging & Wellness Platform",
           href: "/case/smart-food-logging",
+          icon: <LuNotebookPen />,
+
           description:
             "Empowering users to achieve healthier lifestyles through intelligent health tracking",
         },
@@ -111,6 +129,8 @@ export const navItems = [
           type: "link",
           label: "Unified Data Platform for a Telecom Enterprise ",
           href: "/case/unified-data-platform",
+          icon: <BsDatabaseFillAdd />,
+
           description:
             "Transforming network data into actionable business intelligence",
         },
@@ -118,6 +138,8 @@ export const navItems = [
           type: "link",
           label: "Agri Intelligence Platform for Sustainable Farming ",
           href: "/case/agritech-intelligence-platform",
+          icon: <GiFarmer />,
+
           description:
             "Digitizing agriculture through IoT, analytics, and traceability ",
         },
@@ -125,6 +147,8 @@ export const navItems = [
           type: "link",
           label: "Digital Transformation for a Manufacturing Enterprise",
           href: "/case/digital-transformation",
+          icon: <MdDataObject />,
+
           description:
             "Bringing intelligence and automation to production floors",
         },
@@ -132,6 +156,8 @@ export const navItems = [
           type: "link",
           label: "Retail Operations Platform for a Multi-Store Chain ",
           href: "/case/retail-operations",
+          icon: <TbShoppingCartFilled />,
+
           description:
             "Driving connected commerce through data and automation ",
         },
@@ -139,12 +165,15 @@ export const navItems = [
           type: "link",
           label: "Healthcare Network Management System ",
           href: "/case/healthcare-network-management",
+          icon: <CiStethoscope />,
+
           description: "Enabling connected, data-driven healthcare delivery ",
         },
         {
           type: "link",
           label: "Smart Governance Portal for Public Institutions ",
           href: "/case/smart-governance-portal",
+          icon: <RiGovernmentLine />,
           description:
             "Driving transparency and efficiency in digital governance ",
         },

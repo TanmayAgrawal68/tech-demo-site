@@ -28,7 +28,7 @@ const CARDS = [
     content: (
       <div className="relative w-full h-full overflow-hidden rounded-md">
         <img
-          src="https://plus.unsplash.com/premium_photo-1723568482798-98f38c60a3e9?q=80&w=730&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1603969280040-3bbb77278211?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Manu Arora"
           className="w-full h-full object-cover"
         />
