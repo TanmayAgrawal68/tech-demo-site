@@ -303,7 +303,104 @@ import {
   FaChartBar,
   FaLaptopCode,
 } from "react-icons/fa";
+import { GiTechnoHeart } from "react-icons/gi";
+import { MdDashboardCustomize } from "react-icons/md";
+import { TfiStatsUp } from "react-icons/tfi";
+import { GiGiftOfKnowledge } from "react-icons/gi";
+import { FaUserFriends } from "react-icons/fa";
+import { PiCodesandboxLogoBold } from "react-icons/pi";
+import { FaPlugCircleCheck } from "react-icons/fa6";
 
+// export const techAreas = [
+//   {
+//     name: "Digital Platforms",
+//     logo: FaLaptopCode,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#1e3a8a)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Data Engineering & Analytics",
+//     logo: FaChartBar,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Roboto, sans-serif",
+//       background: "linear-gradient(90deg,#4b5563,#2563eb)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Cloud Engineering",
+//     logo: FaCloud,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Poppins, sans-serif",
+//       background: "linear-gradient(90deg,#1f2937,#1e40af)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Managed DevOps",
+//     logo: FaCogs,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#1e3a8a)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "AI & Intelligent Systems",
+//     logo: FaBrain,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Roboto, sans-serif",
+//       background: "linear-gradient(90deg,#4b5563,#3b82f6)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "Product Modernization",
+//     logo: FaProjectDiagram,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Poppins, sans-serif",
+//       background: "linear-gradient(90deg,#1f2937,#2563eb)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "UX & Product Design",
+//     logo: FaPencilRuler,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Inter, sans-serif",
+//       background: "linear-gradient(90deg,#374151,#1e3a8a)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+//   {
+//     name: "API & Microservices",
+//     logo: FaCubes,
+//     style: {
+//       fontWeight: 600,
+//       fontFamily: "Roboto, sans-serif",
+//       background: "linear-gradient(90deg,#4b5563,#1e40af)",
+//       WebkitBackgroundClip: "text",
+//       color: "transparent",
+//     },
+//   },
+// ];
 export const techAreas = [
   {
     name: "Digital Platforms",
@@ -311,7 +408,7 @@ export const techAreas = [
     style: {
       fontWeight: 600,
       fontFamily: "Inter, sans-serif",
-      background: "linear-gradient(90deg,#374151,#1e3a8a)",
+      background: "linear-gradient(90deg, #0ea5e9, #10b981)", // teal to green
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -322,7 +419,7 @@ export const techAreas = [
     style: {
       fontWeight: 600,
       fontFamily: "Roboto, sans-serif",
-      background: "linear-gradient(90deg,#4b5563,#2563eb)",
+      background: "linear-gradient(90deg, #14b8a6, #84cc16)", // aqua to lime
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -333,7 +430,7 @@ export const techAreas = [
     style: {
       fontWeight: 600,
       fontFamily: "Poppins, sans-serif",
-      background: "linear-gradient(90deg,#1f2937,#1e40af)",
+      background: "linear-gradient(90deg, #22c55e, #3b82f6)", // green to soft blue
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -342,9 +439,9 @@ export const techAreas = [
     name: "Managed DevOps",
     logo: FaCogs,
     style: {
-      fontWeight: 200,
+      fontWeight: 600,
       fontFamily: "Inter, sans-serif",
-      background: "linear-gradient(90deg,#374151,#1e3a8a)",
+      background: "linear-gradient(90deg, #2dd4bf, #22c55e)", // mint to green
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -353,9 +450,9 @@ export const techAreas = [
     name: "AI & Intelligent Systems",
     logo: FaBrain,
     style: {
-      fontWeight: 200,
+      fontWeight: 600,
       fontFamily: "Roboto, sans-serif",
-      background: "linear-gradient(90deg,#4b5563,#3b82f6)",
+      background: "linear-gradient(90deg, #06b6d4, #16a34a)", // cyan to green
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -364,9 +461,9 @@ export const techAreas = [
     name: "Product Modernization",
     logo: FaProjectDiagram,
     style: {
-      fontWeight: 200,
+      fontWeight: 600,
       fontFamily: "Poppins, sans-serif",
-      background: "linear-gradient(90deg,#1f2937,#2563eb)",
+      background: "linear-gradient(90deg, #10b981, #3b82f6)", // green to soft blue
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -375,9 +472,9 @@ export const techAreas = [
     name: "UX & Product Design",
     logo: FaPencilRuler,
     style: {
-      fontWeight: 200,
+      fontWeight: 600,
       fontFamily: "Inter, sans-serif",
-      background: "linear-gradient(90deg,#374151,#1e3a8a)",
+      background: "linear-gradient(90deg, #34d399, #0ea5e9)", // light green to teal
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
@@ -386,36 +483,37 @@ export const techAreas = [
     name: "API & Microservices",
     logo: FaCubes,
     style: {
-      fontWeight: 200,
+      fontWeight: 600,
       fontFamily: "Roboto, sans-serif",
-      background: "linear-gradient(90deg,#4b5563,#1e40af)",
+      background: "linear-gradient(90deg, #22c55e, #14b8a6)", // green to aqua
       WebkitBackgroundClip: "text",
       color: "transparent",
     },
   },
 ];
+
 export const homeData = {
   statsData: [
-    { title: "Customer Average Tenure", value: "24+ Months", icon: FaUsers },
-    { title: "Experts", value: "50+", icon: FaDollarSign },
-    { title: "Platforms", value: "7+", icon: FaComments },
+    { title: "Customer Average Tenure", value: "24+ Months", icon: TfiStatsUp },
+    { title: "Experts", value: "50+", icon: GiTechnoHeart },
+    { title: "Platforms", value: "7+", icon: MdDashboardCustomize },
     { title: "Products", value: "4+", icon: FaShoppingCart },
-    { title: "Collective Experience", value: "20+", icon: FaChartLine },
-    { title: "Globally", value: "10+ Clients", icon: FaHeart },
+    { title: "Collective Experience", value: "20+", icon: GiGiftOfKnowledge },
+    { title: "Globally", value: "10+ Clients", icon: FaUsers },
     {
       title: "Collaborating with industry leaders",
       value: "5+ Partners",
-      icon: FaStar,
+      icon: FaUserFriends,
     },
     {
       title: "Expertiese across modern tech stacks",
       value: "15+ Technologies ",
-      icon: FaBell,
+      icon: PiCodesandboxLogoBold,
     },
     {
       title: "Reliable and resilient solutions",
       value: "99% Uptime",
-      icon: FaGift,
+      icon: FaPlugCircleCheck,
     },
   ],
 

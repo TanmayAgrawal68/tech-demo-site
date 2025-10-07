@@ -51,7 +51,9 @@ export function InfiniteLogoCarousel({ items, speed = 0.8 }) {
               className=" flex-shrink-0 flex items-center space-x-2 text-xl md:text-2xl lg:text-4xl  transition-transform duration-500 ease-in-out hover:scale-110  "
             >
               {/* Render logo if present */}
-              {Logo && <Logo className="h-6 w-6 sm:h-6 sm:w-6 text-gray-700" />}
+              {Logo && (
+                <Logo className="h-6 w-6 sm:h-6 sm:w-6 text-secondary" />
+              )}
               {/* Render text */}
               <span style={item.style}>{item.name}</span>
             </div>

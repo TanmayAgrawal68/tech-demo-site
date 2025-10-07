@@ -8,6 +8,9 @@ import {
 } from "framer-motion";
 import { Linkedin, Twitter, Github, Dribbble, Globe } from "lucide-react";
 import { IconBrandBehance } from "@tabler/icons-react";
+import { motion } from "framer-motion";
+import TyperWriterParagraph from "../../TypeWriterParagraph";
+import CustomTextAnimation from "../../CustomTextAnimation";
 
 export function TeamModal({ open, onClose, member }) {
   const cardX = useMotionValue(0.5);
@@ -112,26 +115,40 @@ export function TeamModal({ open, onClose, member }) {
                   )}
                 </div>
               </div>
-              <div className="md:col-span-3 p-6 md:p-8">
+              <div className="md:col-span-3 p-6 mt-4 md:p-8">
                 {about && (
-                  <div className="text-sm leading-relaxed text-foreground/80">
-                    {about}
+                  <div className="text-md leading-relaxed text-foreground/80 whitespace-pre-wrap">
+                    <CustomTextAnimation
+                      text={about}
+                      speed={0.01}
+                      type="fadeIn"
+                    />
                   </div>
                 )}
                 {quote && (
-                  <div className="mt-6 border-l-2 border-border pl-4 italic text-foreground/80">
-                    “{quote}”
+                  <div className="mt-6 border-l-2 border-border pl-4 italic text-secondary font-bold">
+                    <CustomTextAnimation
+                      text={quote}
+                      speed={0.1}
+                      type="bounceIn"
+                      className=""
+                    />
                   </div>
                 )}
                 <div className="mt-8 flex items-center justify-between">
                   <div className="text-xs text-foreground/60">
-                    Click outside or press Esc to close
+                    {/* Click outside or press Esc to close */}
                   </div>
                   <div
-                    className="text-3xl tracking-tight"
+                    className="text-5xl underline underline-offset-10 text-secondary tracking-tight rotate-[-12deg] "
                     style={{ fontFamily: "var(--font-signature)" }}
                   >
-                    {signature}
+                    {" "}
+                    <TyperWriterParagraph
+                      speed={0.15}
+                      about={signature}
+                      className="text-secondary"
+                    />
                   </div>
                 </div>
               </div>

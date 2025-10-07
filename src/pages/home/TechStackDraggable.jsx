@@ -135,14 +135,14 @@ export function TechStackDraggable({
   };
 
   return (
-    <section className="relative w-[screen] py-16 md:py-24 bg-background">
+    <section className="relative w-[screen] py-16 md:py-24 ">
       <div className="mx-auto w-full ">
         <div className="mb-10 md:mb-14 text-center">
           <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground">
-            Full‑Stack Tech Stack
+            Tech Stack
           </h2>
           <p className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto">
-            Drag the cards around to explore the tools we use end‑to‑end.
+            The ingredients that makes the magic happen!
           </p>
         </div>
       </div>
@@ -151,7 +151,7 @@ export function TechStackDraggable({
         <p className="pointer-events-none absolute top-1/2 z-0 mx-auto w-full -translate-y-1/2 px-6 text-center text-2xl font-black text-neutral-300 md:text-4xl dark:text-neutral-800">
           We deliver awesomeness.
         </p>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/5 dark:to-white/5" />
+        <div className="pointer-events-none absolute inset-0 " />
         {items.map((item, index) => (
           <DraggableCardBody
             key={item.title + index}

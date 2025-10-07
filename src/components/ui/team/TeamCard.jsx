@@ -62,12 +62,14 @@ export function TeamCard({ member, onClick, className, interactive = true }) {
           }}
         />
       ) : null}
-      <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/5 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 p-4">
-        <div className="text-base font-semibold leading-tight">
+        <div className="text-lg text-accent-foreground font-bold leading-tight">
           {member.name}
         </div>
-        <div className="text-xs text-foreground/70">{member.role}</div>
+        <div className="text-md italic  text-accent-foreground">
+          {member.role}
+        </div>
       </div>
     </motion.div>
   );

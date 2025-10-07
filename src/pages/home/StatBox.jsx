@@ -35,15 +35,36 @@ export default function StatsGrid({ data }) {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-10">
       <div className="max-w-[360px] bg-gray-200/90  p-6 pl-7 rounded-r-sm ml-[-30px] ">
-        <p className="text-md text-primary">
-          Founded in 2019, Techcanopy brings together a team of experienced
-          engineers, designers, and innovators to build products that help
-          businesses grow and adapt in a rapidly evolving digital world. From
-          conceptualization to launch, we focus on creating apps, tools, and
-          systems that are reliable, scalable, and impactful. Over the years,
-          we’ve delivered multiple products and supported clients across
-          industries, combining technical expertise with a deep understanding of
-          business needs.
+        <p className="text-sm text-primary  p-1 leading-[17px] ">
+          {/* Founded in 2019,{" "}
+          <span className="text-primary font-bold"> Techcanopy</span> brings
+          together a team of experienced engineers, designers, and innovators that help businesses grow and adapt in a rapidly
+          evolving digital world. <br />
+          <br /> From conceptualization to launch, we focus on creating apps,
+          tools, and systems that are reliable, scalable, and impactful. Over
+          the years, we’ve delivered multiple products and supported clients
+          across industries, combining technical expertise with a deep
+          understanding of business needs. */}
+          Founded in 2019,{" "}
+          <span className="text-primary font-bold">Techcanopy</span> is a{" "}
+          <span className="font-semibold">Product Engineering</span> company
+          that brings together experienced engineers, designers, and innovators
+          to help businesses grow and adapt in a rapidly evolving digital world.
+          <br />
+          <br />
+          From conceptualization to launch, our focus is on{" "}
+          <span className="text-primary font-bold">
+            {" "}
+            building reliable, scalable, and impactful products.
+          </span>{" "}
+          We specialize in turning ideas into market-ready solutions through
+          end-to-end Product Engineering — blending technical excellence with a
+          deep understanding of business needs.
+          <br />
+          <br />
+          Over the years, we’ve delivered multiple products and supported
+          clients across diverse industries, driving innovation and sustainable
+          growth.
         </p>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3  p-2">
