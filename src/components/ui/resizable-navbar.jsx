@@ -8,7 +8,7 @@ import {
   useMotionValueEvent,
   motion,
 } from "motion/react";
-
+import teclog from "../../assets/tec-log.svg";
 export const Navbar = ({ children, className }) => {
   const ref = useRef(null);
   const { scrollY } = useScroll({
@@ -44,9 +44,9 @@ export const NavBody = ({ children, className, visible }) => {
   return (
     <motion.div
       animate={{
-        backdropFilter: visible ? "blur(10px)" : "none",
+        backdropFilter: visible ? "blur(5px)" : "none",
         boxShadow: visible ? "var(--shadow-lg)" : "none",
-        width: visible ? "40%" : "100%",
+        width: visible ? "50%" : "100%",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -59,7 +59,7 @@ export const NavBody = ({ children, className, visible }) => {
       }}
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex",
-        visible && "bg-background/80",
+        visible && "bg-background/95",
         className
       )}
     >
@@ -400,12 +400,7 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal"
     >
-      <img
-        src="https://www.techcanopy.com/wp-content/uploads/2024/05/tec-log.svg"
-        alt="logo"
-        width={180}
-        height={100}
-      />
+      <img src={teclog} alt="logo" width={180} height={150} />
       {/* <span className="font-medium text-foreground">Startup</span> */}
     </a>
   );

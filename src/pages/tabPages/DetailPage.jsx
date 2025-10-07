@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TextAnimate } from "../../components/ui/TextAnimate";
 import HeroBackground from "../../components/HeroBackground";
-import Fade from "react-reveal/Fade";
 const DetailPage = ({ pageData }) => {
   if (!pageData) {
     return (

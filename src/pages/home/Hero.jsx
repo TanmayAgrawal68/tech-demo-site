@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useRef, useEffect } from "react";
-import { motion as M } from "motion/react";
+import { AnimatePresence, motion as M } from "motion/react";
 import { NavbarButton } from "../../components/ui/resizable-navbar";
 import { FlipWordsDemo } from "../../components/ui/aceternity/FlipWordsDemo";
 import { HoverBorderGradient } from "../../components/ui/hover-border-gradient";
@@ -11,6 +11,7 @@ import { HeroText } from "./HeroText";
 import { Meteors } from "../../components/ui/meteors";
 import { InfiniteLogoCarousel } from "../../components/ui/InfiniteLogoCorousal";
 import { sampleTechLogos, techAreas } from "../../../data";
+import { BookMeetingModal } from "../../components/BookMeeting";
 
 function Hero() {
   const heroRef = useRef(null);
@@ -21,7 +22,7 @@ function Hero() {
 
   const [mousePosition, setMousePosition] = useState(defaultPosition);
   const [isHovering, setIsHovering] = useState(false);
-
+  const [meetingModal, setMeetingModal] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (!isHovering) {
@@ -111,6 +112,11 @@ function Hero() {
           }px, 0)`,
         }}
       />
+      <AnimatePresence>
+        {meetingModal && (
+          <BookMeetingModal onClose={() => setMeetingModal(false)} />
+        )}
+      </AnimatePresence>
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center ">
@@ -118,7 +124,10 @@ function Hero() {
         <HeroText />
         <div className="pt-8 pb-6 flex flex-col md:flex-row justify-center items-center md: gap-10 w-full ">
           {/* <Button variant="secondary">Book a meeting</Button> */}
-          <CtaHeroButton text="Book a meeting" />
+          <CtaHeroButton
+            text="Book a meeting"
+            handleClick={() => setMeetingModal(true)}
+          />
           <CtaHeroButtonSecondary text="Explore " />
         </div>
       </div>
