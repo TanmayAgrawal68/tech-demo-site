@@ -206,6 +206,13 @@ body::-webkit-scrollbar {
   }
 }
 @layer utilities {
+  .title-main {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+  .title-main-sub {
+    @apply mt-3 md:mt-4 text-foreground/80  md:text-xl;
+  }
+
   .scrollbar-hide {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */

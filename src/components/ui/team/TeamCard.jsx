@@ -29,7 +29,7 @@ export function TeamCard({ member, onClick, className, interactive = true }) {
     <motion.div
       ref={cardRef}
       className={cn(
-        "relative w-[300px] h-[420px] md:w-[320px] md:h-[460px] rounded-2xl",
+        "relative w-[200px] h-[320px] md:w-[320px] md:h-[460px] rounded-2xl",
         "border border-border bg-card text-card-foreground shadow-lg overflow-hidden",
         "cursor-pointer select-none",
         className
@@ -64,10 +64,10 @@ export function TeamCard({ member, onClick, className, interactive = true }) {
       ) : null}
       <div className="absolute inset-0 bg-gradient-to-t from-card via-card/5 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 p-4">
-        <div className="text-lg text-accent-foreground font-bold leading-tight">
+        <div className=" text-md md:text-lg text-accent-foreground font-bold leading-tight">
           {member.name}
         </div>
-        <div className="text-md italic  text-accent-foreground">
+        <div className=" text-xs md:text-md italic  text-accent-foreground">
           {member.role}
         </div>
       </div>

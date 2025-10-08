@@ -16,7 +16,7 @@ export const Highlight = ({ children, className }) => {
 
 export function ImageStack() {
   return (
-    <div className="relative w-full h-[90vh] md:h-[100vh] flex items-center justify-center">
+    <div className="relative w-full h-[80vh] md:h-[100vh] flex items-center justify-center">
       <CardStack items={CARDS} />
     </div>
   );

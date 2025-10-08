@@ -122,12 +122,12 @@ export function Team() {
           <CustomTextAnimation
             text=" Meet the Team"
             type="whipIn"
-            className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground"
+            className="title-main font-semibold tracking-tight text-foreground"
           />
           <CustomTextAnimation
             text="A diverse, passionate group building future-ready products"
             type="whipIn"
-            className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto"
+            className="title-main-sub"
           />
         </div>
         <TeamMarquee items={items} speed={40} onSelect={(m) => setActive(m)} />

@@ -22,9 +22,9 @@ import typescriptLogo from "../../assets/techLogos/typescript-original.svg";
 import CustomTextAnimation from "../../components/CustomTextAnimation";
 export function TechStackDraggable({
   cardWidth = "w-24 md:w-42",
-  cardMinHeight = "min-h-42 md:min-h-42",
-  imageSize = "h-16 w-16 md:h-20 md:w-20",
-  titleSize = "text-base md:text-lg",
+  cardMinHeight = "min-h-32 md:min-h-42",
+  imageSize = "h-12 w-16 md:h-20 md:w-20",
+  titleSize = "text-base text-xs md:text-lg",
 }) {
   const items = [
     {
@@ -145,12 +145,15 @@ export function TechStackDraggable({
         <div className="mb-10 md:mb-14 text-center">
           <CustomTextAnimation
             text="Tech Stack"
-            type="fadeIn"
-            className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground"
+            type="whipIn"
+            speed={0.1}
+            className="title-main font-semibold tracking-tight text-foreground"
           />
           <CustomTextAnimation
             text="The ingredients that makes the magic happen!"
-            className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto"
+            type="whipIn"
+            speed={0.1}
+            className="title-main-sub"
           />
         </div>
       </div>

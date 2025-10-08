@@ -8,7 +8,7 @@ export function SmartImage({
   initialWidth = 15, // curtain start %
   finalWidth = 0, // curtain fully open %
   initialScale = 0.7,
-  finalScale = 1.4,
+  finalScale = 1.3,
   height = "300px",
   hoverOverlayColor = "rgba(2,6,23,0.85)", // darker/primary color
   borderRadius = "2rem",

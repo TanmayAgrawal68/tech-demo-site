@@ -35,19 +35,29 @@ function Home() {
   return (
     <>
       <Hero />
-      <div className="mt-[-100px]">
+      <div className="hidden md:block mt-[-100px]">
         <SmartImage
           src={team}
           initialScale={1}
-          finalScale={1.3}
-          initialWidth={5}
+          finalScale={1.2}
+          initialWidth={3}
           finalWidth={0}
           height="420px"
         >
-          <div className="hidden md:block ">
+          <div>
             <StatsGrid data={homeData.statsData} />
           </div>
         </SmartImage>
+      </div>
+      <div className="md:hidden">
+        <SmartImage
+          src={team}
+          initialScale={1}
+          finalScale={0.96}
+          initialWidth={2}
+          finalWidth={0}
+          height="420px"
+        />
       </div>
       <div className="flex items-center mt-16 justify-center  md:hidden mt">
         <StatsGrid data={homeData.statsData} />
@@ -63,12 +73,12 @@ function Home() {
         <CustomTextAnimation
           text="Hear the Buzz"
           type="fadeIn"
-          className="text-primary font-bold text-xl md:text-4xl lg:text-5xl"
+          className="title-main font-semibold"
         />
         <CustomTextAnimation
           type="whipIn"
           text="Stories from the Frontline"
-          className="mt-2 text-primary/80"
+          className="title-main-sub"
         />
 
         <AnimatedTestimonialsDemo />
@@ -85,7 +95,7 @@ function Home() {
           loop={true}
           gapPx={100}
           direction="left"
-          className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-secondary"
+          className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-secondary"
           fontFamily="'Inter', sans-serif"
         ></InfiniteTextCorousal>
       </div>

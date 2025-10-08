@@ -88,10 +88,10 @@ export const HeroParallax = ({ products }) => {
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+      <h1 className="title-main font-bold dark:text-white">
         Real Work, Real Results <br />
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+      <p className="max-w-2xl text-base title-main-sub md:text-xl mt-8 dark:text-neutral-200">
         We love building products that solve real problems and make a
         difference. From apps to platforms, each project shows how we bring
         ideas to life with the right mix of design, technology, and creativity.
