@@ -42,14 +42,14 @@ export function TeamModal({ open, onClose, member }) {
     <AnimatePresence>
       {open && (
         <Motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center"
+          className="fixed inset-0 z-50 flex items-center justify-center  "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <div className="absolute inset-0 bg-black/60" onClick={onClose} />
           <Motion.div
-            className="relative z-10 w-[min(94vw,980px)] rounded-2xl border border-border bg-card text-card-foreground shadow-xl overflow-hidden"
+            className="relative z-10 w-[min(94vw,980px)] max-h-[80vh] md:max-h-[90vh] rounded-2xl border border-border bg-card text-card-foreground shadow-xl overflow-scroll"
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 20, opacity: 0 }}
@@ -64,7 +64,7 @@ export function TeamModal({ open, onClose, member }) {
                   className="relative w-full aspect-[3/4] perspective-[1200px]"
                 >
                   <Motion.div
-                    className="absolute inset-0 rounded-xl overflow-hidden shadow-xl"
+                    className="absolute inset-0 rounded-xl overflow-hidden shadow-xl "
                     style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
                   >
                     <div className="absolute inset-0 rounded-xl translate-z-[60px] border border-border bg-transparent">
