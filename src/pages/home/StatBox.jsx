@@ -34,7 +34,7 @@ function StatBox({ title, icon: Icon, value }) {
 export default function StatsGrid({ data }) {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-      <div className="max-w-[360px] bg-gray-200/90  p-6 pl-7 rounded-r-sm ml-[-30px] ">
+      <div className="max-w-[360px] bg-gray-200/90  p-6 pl-7 rounded-r-sm md:ml-[-30px] ">
         <p className="text-sm text-primary  p-1 leading-[17px] ">
           {/* Founded in 2019,{" "}
           <span className="text-primary font-bold"> Techcanopy</span> brings

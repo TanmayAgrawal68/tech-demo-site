@@ -41,7 +41,7 @@ export function FeatureSection() {
           <div className="w-full ">
             <ImageStack />
           </div>
-          <div className="w-full md:mt-[-48px] ">
+          <div className="w-full mt-[-56px] md:mt-[-48px] ">
             <Tabs
               tabs={tabs}
               containerClassName="gap-3"

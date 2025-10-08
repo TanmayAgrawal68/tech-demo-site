@@ -44,8 +44,13 @@ function Home() {
           finalWidth={0}
           height="420px"
         >
-          <StatsGrid data={homeData.statsData} />
+          <div className="hidden md:block ">
+            <StatsGrid data={homeData.statsData} />
+          </div>
         </SmartImage>
+      </div>
+      <div className="flex items-center mt-16 justify-center  md:hidden mt">
+        <StatsGrid data={homeData.statsData} />
       </div>
       <FeatureSection />
       <HeroParallaxDemo />
