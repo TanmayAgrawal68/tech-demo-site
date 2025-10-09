@@ -593,7 +593,7 @@ export const homeData = {
       icon: FaUserFriends,
     },
     {
-      title: "Expertiese across modern tech stacks",
+      title: "Expertise across modern tech stacks",
       value: "15+ Technologies ",
       icon: PiCodesandboxLogoBold,
     },

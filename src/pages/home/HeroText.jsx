@@ -32,7 +32,7 @@ export function HeroText() {
           {" "}
           <b className="text-primary p-2">next-gen innovation</b>{" "}
         </PointerHighlight>{" "}
-        transforming ideas into imactful digital experiences
+        transforming ideas into impactful digital experiences
       </div>
     </div>
   );

@@ -49,7 +49,7 @@ function Home() {
           </div>
         </SmartImage>
       </div>
-      <div className="md:hidden">
+      <div className=" mt-[-50px] md:hidden">
         <SmartImage
           src={team}
           initialScale={1}
@@ -95,7 +95,7 @@ function Home() {
           loop={true}
           gapPx={100}
           direction="left"
-          className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-secondary"
+          className=" xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-secondary"
           fontFamily="'Inter', sans-serif"
         ></InfiniteTextCorousal>
       </div>

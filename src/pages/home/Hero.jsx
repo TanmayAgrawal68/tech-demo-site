@@ -83,7 +83,7 @@ function Hero() {
   return (
     <div
       ref={heroRef}
-      className="hero-section relative min-h-[1200px] w-full overflow-hidden bg-background mt-[-100px]"
+      className="hero-section relative min-h-[800px]  md:min-h-[1200px] w-full overflow-hidden bg-background mt-[-100px]"
       onMouseMove={(e) => {
         if (!heroRef.current) return;
 
@@ -132,7 +132,7 @@ function Hero() {
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center ">
         {/* <FlipWordsDemo /> */}
         <HeroText />
-        <div className="pt-12 pb-6 flex flex-col md:flex-row justify-center items-center md: gap-10 w-full ">
+        <div className="pt-12 pb-6 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full ">
           {/* <Button variant="secondary">Book a meeting</Button> */}
           <CtaHeroButton
             text="Book a meeting"

@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img alt="techcanopy" src={techcanopy} height={100} width={200} />
-            <p className="text-sm mt-4 text-primary max-w-xs">
+            <p className="text-sm mt-4 text-primary max-w-xs font-bold mb-5">
               A product Engineering Company.
             </p>
             <a href="https://www.google.com/maps/place/Techcanopy+Software+Labs/@12.9189023,77.5091907,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3e566fb5c549:0xf725e53d7ffbdeb8!8m2!3d12.9189023!4d77.5091907!16s%2Fg%2F11fnl50x51?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D">
