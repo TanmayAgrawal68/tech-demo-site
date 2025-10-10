@@ -1,13 +1,8 @@
 import React, { useMemo, useRef, useState, useEffect } from "react";
-import { motion, useAnimationControls } from "framer-motion";
+import { motion } from "framer-motion";
 import { TeamCard } from "@/components/ui/team/TeamCard";
 
-export function TeamMarquee({ items = [], speed = 90, onSelect }) {
-  const controls = useAnimationControls();
-  const containerRef = useRef(null);
-  const [isHovering, setIsHovering] = useState(false);
-
-  // Duplicate items sufficiently to ensure seamless loop
+export function TeamMarquee({ items = [], speed = 50, onSelect }) {
   const DUPLICATION = 3;
   const loopItems = useMemo(
     () =>
@@ -17,38 +12,95 @@ export function TeamMarquee({ items = [], speed = 90, onSelect }) {
     [items]
   );
 
+  const containerRef = useRef(null);
+  const marqueeRef = useRef(null);
+
+  const xOffset = useRef(0); // current x in px
+  const isDragging = useRef(false);
+  const dragStartX = useRef(0);
+
+  // Compute card width
+  const cardWidth = useRef(0);
   useEffect(() => {
-    if (!containerRef.current) return;
-    const start = () => {
-      // Animate continuously from 0% to -33.333% (since we duplicate 3x) for a seamless loop
-      controls.start({
-        x: ["0%", "-33.333%"],
-        transition: { ease: "linear", duration: speed, repeat: Infinity },
-      });
+    if (marqueeRef.current && marqueeRef.current.children.length > 0) {
+      cardWidth.current =
+        marqueeRef.current.children[0].offsetWidth +
+        parseInt(
+          getComputedStyle(marqueeRef.current.children[0]).marginRight,
+          10
+        );
+    }
+  }, [loopItems]);
+
+  // Auto-scroll using requestAnimationFrame
+  useEffect(() => {
+    let rafId;
+    let lastTime;
+
+    const step = (time) => {
+      if (!lastTime) lastTime = time;
+      const elapsed = (time - lastTime) / 1000; // seconds
+      lastTime = time;
+
+      if (!isDragging.current) {
+        xOffset.current -= speed * elapsed; // move left
+        if (
+          Math.abs(xOffset.current) >=
+          (cardWidth.current || 1) * items.length
+        ) {
+          // loop back seamlessly
+          xOffset.current += (cardWidth.current || 1) * items.length;
+        }
+        if (marqueeRef.current)
+          marqueeRef.current.style.transform = `translateX(${xOffset.current}px)`;
+      }
+
+      rafId = requestAnimationFrame(step);
     };
-    if (!isHovering) start();
-    return () => controls.stop();
-  }, [controls, isHovering, speed]);
+
+    rafId = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafId);
+  }, [speed, items.length]);
+
+  // Drag events
+  const onPointerDown = (e) => {
+    isDragging.current = true;
+    dragStartX.current = e.touches ? e.touches[0].clientX : e.clientX;
+    if (marqueeRef.current) marqueeRef.current.style.transition = "none";
+  };
+
+  const onPointerMove = (e) => {
+    if (!isDragging.current || !marqueeRef.current) return;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const delta = clientX - dragStartX.current;
+    dragStartX.current = clientX;
+
+    xOffset.current += delta; // move marquee with pointer
+    marqueeRef.current.style.transform = `translateX(${xOffset.current}px)`;
+  };
+
+  const onPointerUp = () => {
+    isDragging.current = false;
+    if (marqueeRef.current) marqueeRef.current.style.transition = "";
+  };
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden"
-      onMouseEnter={() => {
-        setIsHovering(true);
-        controls.stop();
-      }}
-      onMouseLeave={() => {
-        setIsHovering(false);
-      }}
+      className="relative w-full overflow-hidden cursor-grab"
+      onMouseDown={onPointerDown}
+      onMouseMove={onPointerMove}
+      onMouseUp={onPointerUp}
+      onMouseLeave={isDragging.current ? onPointerUp : undefined}
+      onTouchStart={onPointerDown}
+      onTouchMove={onPointerMove}
+      onTouchEnd={onPointerUp}
     >
-      <motion.div
+      <div
+        ref={marqueeRef}
         className="flex gap-6 md:gap-10 will-change-transform"
-        animate={controls}
-        initial={{ x: "0%" }}
       >
         {loopItems.map((m, i) => {
-          // Keep cards perfectly upright in the carousel
           const t = (i % items.length) / items.length - 0.5;
           const arcDepth = 0;
           const y = arcDepth * (1 - Math.cos(t));
@@ -65,7 +117,7 @@ export function TeamMarquee({ items = [], speed = 90, onSelect }) {
             </div>
           );
         })}
-      </motion.div>
+      </div>
     </div>
   );
 }

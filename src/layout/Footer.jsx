@@ -94,7 +94,7 @@ const productLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative  overflow-hidden bg-gradient-to-b from-#f2f0ec to-secondary/10 text-gray-700">
+    <footer className="relative  overflow-hidden bg-gradient-to-b from-#f2f0ec to-secondary/10 text-gray-800">
       {/* 🌊 Wavy Bezier Divider */}
       <div className="absolute top-0 left-0 w-full h-[100px] overflow-hidden pointer-events-none z-10">
         <svg

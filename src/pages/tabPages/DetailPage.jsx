@@ -198,7 +198,7 @@ const DetailPage = ({ pageData }) => {
 
       {/* Call to Action Section */}
       <motion.section
-        className="bg-muted/50 py-12 sm:py-16 md:py-20"
+        className="bg-muted/50 py-12 sm:py-16 md:py-20 mb-50 "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

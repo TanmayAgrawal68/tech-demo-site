@@ -9,14 +9,6 @@ import dheeraj from "../../assets/dheeraj.webp";
 import rahul from "../../assets/Rahul.webp";
 import aditya from "../../assets/Aditya.webp";
 import CustomTextAnimation from "../../components/CustomTextAnimation";
-const lorem =
-  "" +
-  "I am driven by a deep curiosity for how complex systems and teams evolve over time. " +
-  "Across startups and enterprises, I have built platforms that balance reliability with speed, " +
-  "and I believe craftsmanship, clarity, and empathy are the core of great products. " +
-  "My work focuses on building strong foundations, mentoring teams, and creating experiences that scale gracefully. " +
-  "I love collaborating across disciplines, simplifying the hard things, and turning ambiguity into momentum. " +
-  "Outside work, I explore design, music, and the outdoors—always learning, always iterating.";
 
 const team = [
   {
@@ -130,7 +122,7 @@ export function Team() {
             className="title-main-sub"
           />
         </div>
-        <TeamMarquee items={items} speed={40} onSelect={(m) => setActive(m)} />
+        <TeamMarquee items={items} speed={20} onSelect={(m) => setActive(m)} />
       </div>
       <TeamModal
         open={!!active}
