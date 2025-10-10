@@ -257,7 +257,19 @@ body::-webkit-scrollbar {
     }
   }
 
-  .animate-slide-gradient {
-    animation: slide-gradient 2s ease-in-out infinite;
+  .waveSlow {
+    animation: waveMove 15s linear infinite;
+    transform-origin: 0 0;
+    will-change: transform;
+  }
+
+  /* Horizontal movement only! */
+  @keyframes waveMove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
