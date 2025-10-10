@@ -5,7 +5,7 @@ export const Highlight = ({ children, className }) => {
   return (
     <span
       className={cn(
-        "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
+        "font-bold bg-secondary-foreground text-secondary dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
         className
       )}
     >
@@ -16,7 +16,7 @@ export const Highlight = ({ children, className }) => {
 
 export function ImageStack() {
   return (
-    <div className="relative w-full h-[80vh] md:h-[100vh] flex items-center justify-center">
+    <div className="relative w-full h-[70vh] md:h-[100vh] flex items-center justify-center">
       <CardStack items={CARDS} />
     </div>
   );

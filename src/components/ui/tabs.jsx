@@ -58,7 +58,7 @@ export const Tabs = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
         className={cn(
-          "mt-2 shadow-xs bg-gradient-to-br  from-card  to-100% rounded-md  ",
+          "mt-2  bg-none  from-card  to-100% rounded-md  ",
           contentClassName
         )}
       >

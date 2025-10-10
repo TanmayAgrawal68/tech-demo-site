@@ -25,16 +25,11 @@ export function FeatureSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-10 md:mb-14 text-center">
           <div className="title-main font-semibold tracking-tight text-foreground flex justify-center">
-            {/* <TextAnimate
-              text="Powerful features to grow with you"
-              className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground p-2"
-            /> */}
             <CustomTextAnimation
               text="Powerful features to grow with you"
               type="whipIn"
               speed={0.1}
             />
-            {/* Powerful features to grow with you */}
           </div>
           <CustomTextAnimation
             text=" Explore our product capabilities and service offerings in a single, delightful interface."
@@ -42,13 +37,8 @@ export function FeatureSection() {
             speed={0.1}
             className="title-main-sub"
           />
-          {/* <TextAnimate
-            text=" Explore our product capabilities and service offerings in a single, delightful interface."
-            type="rollIn"
-            className="mt-3 md:mt-4 text-foreground/70 max-w-2xl mx-auto"
-          ></TextAnimate> */}
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mt-36 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mt-36  ">
           <div className="w-full ">
             <ImageStack />
           </div>
@@ -58,7 +48,7 @@ export function FeatureSection() {
               containerClassName="gap-3"
               tabClassName="text-sm md:text-base hover:bg-secondary/50 "
               activeTabClassName="bg-muted"
-              contentClassName="overflow-scroll max-h-[80vh]"
+              contentClassName="overflow-scroll scrollbar-hide max-h-[80vh]"
             />
           </div>
         </div>

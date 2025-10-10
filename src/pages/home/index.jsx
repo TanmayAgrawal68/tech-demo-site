@@ -69,7 +69,7 @@ function Home() {
       <Team />
       {/* Removed demo from production UI */}
       {/* <Testimonials /> */}
-      <div className="mt-28 mb-20 overflow-clip max-h-[screen] flex justify-center items-center flex-col">
+      <div className="mt-28 mb-20 flex justify-center items-center flex-col">
         <CustomTextAnimation
           text="Hear the Buzz"
           type="fadeIn"

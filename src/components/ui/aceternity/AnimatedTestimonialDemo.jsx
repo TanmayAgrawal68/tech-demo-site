@@ -30,5 +30,5 @@ export function AnimatedTestimonialsDemo() {
       src: avatarD,
     },
   ];
-  return <AnimatedTestimonials autoplay={true} testimonials={testimonials} />;
+  return <AnimatedTestimonials autoplay={false} testimonials={testimonials} />;
 }
