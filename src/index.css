@@ -258,7 +258,7 @@ body::-webkit-scrollbar {
   }
 
   .waveSlow {
-    animation: waveMove 15s linear infinite;
+    animation: waveMove 150s linear infinite;
     transform-origin: 0 0;
     will-change: transform;
   }
@@ -269,7 +269,7 @@ body::-webkit-scrollbar {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-70%);
     }
   }
 }
