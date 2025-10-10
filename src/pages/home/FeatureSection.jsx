@@ -21,7 +21,7 @@ const tabs = [
 
 export function FeatureSection() {
   return (
-    <section id="feature-section" className="relative   mt-[240px] ">
+    <section id="feature-section" className="relative   mt-[300px] mb-24 ">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-10 md:mb-14 text-center">
           <div className="title-main font-semibold tracking-tight text-foreground flex justify-center">
